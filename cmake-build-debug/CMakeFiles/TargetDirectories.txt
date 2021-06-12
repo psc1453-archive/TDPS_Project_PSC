@@ -1,0 +1,3 @@
+/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir
