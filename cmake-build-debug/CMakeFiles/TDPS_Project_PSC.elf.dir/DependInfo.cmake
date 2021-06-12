@@ -28,6 +28,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"
   "../Drivers/CMSIS/Device/ST/STM32H7xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Drivers/ST7735/Inc"
+  "../Drivers/Camera/Inc"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/crc.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
@@ -44,6 +46,20 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/system_stm32h7xx.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/tim.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/usart.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/camera.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov2640.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov2640_regs.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov5640.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov5640_regs.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7670.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7670_regs.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7725.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7725_regs.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/lcd.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/logo_128_160.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/logo_160_80.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/st7735.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/st7735_reg.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c.obj"
@@ -95,6 +111,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"
   "../Drivers/CMSIS/Device/ST/STM32H7xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Drivers/ST7735/Inc"
+  "../Drivers/Camera/Inc"
   )
 
 # Targets to which this target links.

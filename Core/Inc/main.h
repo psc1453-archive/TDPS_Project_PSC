@@ -58,6 +58,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define KEY_Pin GPIO_PIN_13
+#define KEY_GPIO_Port GPIOC
 #define DISTANCE_TOP_ECHO_Pin GPIO_PIN_4
 #define DISTANCE_TOP_ECHO_GPIO_Port GPIOC
 #define DISTANCE_TOP_ECHO_EXTI_IRQn EXTI4_IRQn

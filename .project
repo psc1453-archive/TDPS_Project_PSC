@@ -27,6 +27,10 @@
 	<linkedResources>
 		
 	<link>
+			<name>Doc/network_generate_report.txt</name>
+			<type>1</type>
+			<location>PARENT-2-PROJECT_LOC/X-CUBE-AI/App/network_generate_report.txt</location>
+		</link><link>
 			<name>Application/User/X-CUBE-AI/App/network.c</name>
 			<type>1</type>
 			<location>PARENT-2-PROJECT_LOC/X-CUBE-AI/App/network.c</location>
@@ -34,9 +38,5 @@
 			<name>Application/User/X-CUBE-AI/App/network_data.c</name>
 			<type>1</type>
 			<location>PARENT-2-PROJECT_LOC/X-CUBE-AI/App/network_data.c</location>
-		</link><link>
-			<name>Doc/network_generate_report.txt</name>
-			<type>1</type>
-			<location>PARENT-2-PROJECT_LOC/X-CUBE-AI/App/network_generate_report.txt</location>
 		</link></linkedResources>
 </projectDescription>

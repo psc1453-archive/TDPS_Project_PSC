@@ -57,6 +57,8 @@
 					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
 					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/CMSIS/Include"/>
+					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Inc"/>
+					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc"/>
 					<Add directory="/usr/local/Caskroom/gcc-arm-embedded/10-2020-q4-major/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
 					<Add directory="/usr/local/Caskroom/gcc-arm-embedded/10-2020-q4-major/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
 					<Add directory="/usr/local/Caskroom/gcc-arm-embedded/10-2020-q4-major/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
@@ -91,6 +93,8 @@
 					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
 					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/CMSIS/Include"/>
+					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Inc"/>
+					<Add directory="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc"/>
 					<Add directory="/usr/local/Caskroom/gcc-arm-embedded/10-2020-q4-major/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
 					<Add directory="/usr/local/Caskroom/gcc-arm-embedded/10-2020-q4-major/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
 					<Add directory="/usr/local/Caskroom/gcc-arm-embedded/10-2020-q4-major/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
@@ -266,6 +270,87 @@
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/camera.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov2640.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov2640_regs.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov5640.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov5640_regs.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov7670.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov7670_regs.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov7725.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Inc/ov7725_regs.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/camera.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov2640.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov2640_regs.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov5640.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov5640_regs.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7670.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7670_regs.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7725.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7725_regs.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Inc/font.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Inc/lcd.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Inc/st7735.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Inc/st7735_reg.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/lcd.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/logo_128_160.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/logo_160_80.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/st7735.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/st7735_reg.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">

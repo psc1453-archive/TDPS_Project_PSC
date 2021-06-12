@@ -113,6 +113,7 @@ int main(void)
   MX_UART5_Init();
   MX_USART3_UART_Init();
   MX_I2C1_Init();
+  MX_TIM16_Init();
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
 

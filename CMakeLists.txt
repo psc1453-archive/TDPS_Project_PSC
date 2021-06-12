@@ -49,8 +49,7 @@ endif ()
 link_directories(Middlewares/ST/AI/Lib)
 link_libraries(NetworkRuntime600_CM7_GCC)
 
-
-include_directories(Core/Inc X-CUBE-AI/App X-CUBE-AI Middlewares/ST/AI/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include)
+include_directories(Core/Inc X-CUBE-AI/App X-CUBE-AI Middlewares/ST/AI/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Drivers/ST7735/Inc Drivers/Camera/Inc)
 
 add_definitions(-DUSE_HAL_DRIVER -DSTM32H743xx)
 

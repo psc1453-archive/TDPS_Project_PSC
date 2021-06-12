@@ -520,6 +520,384 @@ Core/Src/usart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.s
 .PHONY : Core/Src/usart.c.s
 
+Drivers/Camera/Src/camera.obj: Drivers/Camera/Src/camera.c.obj
+
+.PHONY : Drivers/Camera/Src/camera.obj
+
+# target to build an object file
+Drivers/Camera/Src/camera.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj
+.PHONY : Drivers/Camera/Src/camera.c.obj
+
+Drivers/Camera/Src/camera.i: Drivers/Camera/Src/camera.c.i
+
+.PHONY : Drivers/Camera/Src/camera.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/camera.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.i
+.PHONY : Drivers/Camera/Src/camera.c.i
+
+Drivers/Camera/Src/camera.s: Drivers/Camera/Src/camera.c.s
+
+.PHONY : Drivers/Camera/Src/camera.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/camera.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.s
+.PHONY : Drivers/Camera/Src/camera.c.s
+
+Drivers/Camera/Src/ov2640.obj: Drivers/Camera/Src/ov2640.c.obj
+
+.PHONY : Drivers/Camera/Src/ov2640.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov2640.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj
+.PHONY : Drivers/Camera/Src/ov2640.c.obj
+
+Drivers/Camera/Src/ov2640.i: Drivers/Camera/Src/ov2640.c.i
+
+.PHONY : Drivers/Camera/Src/ov2640.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov2640.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.i
+.PHONY : Drivers/Camera/Src/ov2640.c.i
+
+Drivers/Camera/Src/ov2640.s: Drivers/Camera/Src/ov2640.c.s
+
+.PHONY : Drivers/Camera/Src/ov2640.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov2640.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.s
+.PHONY : Drivers/Camera/Src/ov2640.c.s
+
+Drivers/Camera/Src/ov2640_regs.obj: Drivers/Camera/Src/ov2640_regs.c.obj
+
+.PHONY : Drivers/Camera/Src/ov2640_regs.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov2640_regs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.obj
+.PHONY : Drivers/Camera/Src/ov2640_regs.c.obj
+
+Drivers/Camera/Src/ov2640_regs.i: Drivers/Camera/Src/ov2640_regs.c.i
+
+.PHONY : Drivers/Camera/Src/ov2640_regs.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov2640_regs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.i
+.PHONY : Drivers/Camera/Src/ov2640_regs.c.i
+
+Drivers/Camera/Src/ov2640_regs.s: Drivers/Camera/Src/ov2640_regs.c.s
+
+.PHONY : Drivers/Camera/Src/ov2640_regs.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov2640_regs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.s
+.PHONY : Drivers/Camera/Src/ov2640_regs.c.s
+
+Drivers/Camera/Src/ov5640.obj: Drivers/Camera/Src/ov5640.c.obj
+
+.PHONY : Drivers/Camera/Src/ov5640.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov5640.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.obj
+.PHONY : Drivers/Camera/Src/ov5640.c.obj
+
+Drivers/Camera/Src/ov5640.i: Drivers/Camera/Src/ov5640.c.i
+
+.PHONY : Drivers/Camera/Src/ov5640.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov5640.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.i
+.PHONY : Drivers/Camera/Src/ov5640.c.i
+
+Drivers/Camera/Src/ov5640.s: Drivers/Camera/Src/ov5640.c.s
+
+.PHONY : Drivers/Camera/Src/ov5640.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov5640.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.s
+.PHONY : Drivers/Camera/Src/ov5640.c.s
+
+Drivers/Camera/Src/ov5640_regs.obj: Drivers/Camera/Src/ov5640_regs.c.obj
+
+.PHONY : Drivers/Camera/Src/ov5640_regs.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov5640_regs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.obj
+.PHONY : Drivers/Camera/Src/ov5640_regs.c.obj
+
+Drivers/Camera/Src/ov5640_regs.i: Drivers/Camera/Src/ov5640_regs.c.i
+
+.PHONY : Drivers/Camera/Src/ov5640_regs.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov5640_regs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.i
+.PHONY : Drivers/Camera/Src/ov5640_regs.c.i
+
+Drivers/Camera/Src/ov5640_regs.s: Drivers/Camera/Src/ov5640_regs.c.s
+
+.PHONY : Drivers/Camera/Src/ov5640_regs.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov5640_regs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.s
+.PHONY : Drivers/Camera/Src/ov5640_regs.c.s
+
+Drivers/Camera/Src/ov7670.obj: Drivers/Camera/Src/ov7670.c.obj
+
+.PHONY : Drivers/Camera/Src/ov7670.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov7670.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.obj
+.PHONY : Drivers/Camera/Src/ov7670.c.obj
+
+Drivers/Camera/Src/ov7670.i: Drivers/Camera/Src/ov7670.c.i
+
+.PHONY : Drivers/Camera/Src/ov7670.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov7670.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.i
+.PHONY : Drivers/Camera/Src/ov7670.c.i
+
+Drivers/Camera/Src/ov7670.s: Drivers/Camera/Src/ov7670.c.s
+
+.PHONY : Drivers/Camera/Src/ov7670.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov7670.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.s
+.PHONY : Drivers/Camera/Src/ov7670.c.s
+
+Drivers/Camera/Src/ov7670_regs.obj: Drivers/Camera/Src/ov7670_regs.c.obj
+
+.PHONY : Drivers/Camera/Src/ov7670_regs.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov7670_regs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.obj
+.PHONY : Drivers/Camera/Src/ov7670_regs.c.obj
+
+Drivers/Camera/Src/ov7670_regs.i: Drivers/Camera/Src/ov7670_regs.c.i
+
+.PHONY : Drivers/Camera/Src/ov7670_regs.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov7670_regs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.i
+.PHONY : Drivers/Camera/Src/ov7670_regs.c.i
+
+Drivers/Camera/Src/ov7670_regs.s: Drivers/Camera/Src/ov7670_regs.c.s
+
+.PHONY : Drivers/Camera/Src/ov7670_regs.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov7670_regs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.s
+.PHONY : Drivers/Camera/Src/ov7670_regs.c.s
+
+Drivers/Camera/Src/ov7725.obj: Drivers/Camera/Src/ov7725.c.obj
+
+.PHONY : Drivers/Camera/Src/ov7725.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov7725.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.obj
+.PHONY : Drivers/Camera/Src/ov7725.c.obj
+
+Drivers/Camera/Src/ov7725.i: Drivers/Camera/Src/ov7725.c.i
+
+.PHONY : Drivers/Camera/Src/ov7725.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov7725.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.i
+.PHONY : Drivers/Camera/Src/ov7725.c.i
+
+Drivers/Camera/Src/ov7725.s: Drivers/Camera/Src/ov7725.c.s
+
+.PHONY : Drivers/Camera/Src/ov7725.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov7725.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.s
+.PHONY : Drivers/Camera/Src/ov7725.c.s
+
+Drivers/Camera/Src/ov7725_regs.obj: Drivers/Camera/Src/ov7725_regs.c.obj
+
+.PHONY : Drivers/Camera/Src/ov7725_regs.obj
+
+# target to build an object file
+Drivers/Camera/Src/ov7725_regs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.obj
+.PHONY : Drivers/Camera/Src/ov7725_regs.c.obj
+
+Drivers/Camera/Src/ov7725_regs.i: Drivers/Camera/Src/ov7725_regs.c.i
+
+.PHONY : Drivers/Camera/Src/ov7725_regs.i
+
+# target to preprocess a source file
+Drivers/Camera/Src/ov7725_regs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.i
+.PHONY : Drivers/Camera/Src/ov7725_regs.c.i
+
+Drivers/Camera/Src/ov7725_regs.s: Drivers/Camera/Src/ov7725_regs.c.s
+
+.PHONY : Drivers/Camera/Src/ov7725_regs.s
+
+# target to generate assembly for a file
+Drivers/Camera/Src/ov7725_regs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.s
+.PHONY : Drivers/Camera/Src/ov7725_regs.c.s
+
+Drivers/ST7735/Src/lcd.obj: Drivers/ST7735/Src/lcd.c.obj
+
+.PHONY : Drivers/ST7735/Src/lcd.obj
+
+# target to build an object file
+Drivers/ST7735/Src/lcd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.obj
+.PHONY : Drivers/ST7735/Src/lcd.c.obj
+
+Drivers/ST7735/Src/lcd.i: Drivers/ST7735/Src/lcd.c.i
+
+.PHONY : Drivers/ST7735/Src/lcd.i
+
+# target to preprocess a source file
+Drivers/ST7735/Src/lcd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.i
+.PHONY : Drivers/ST7735/Src/lcd.c.i
+
+Drivers/ST7735/Src/lcd.s: Drivers/ST7735/Src/lcd.c.s
+
+.PHONY : Drivers/ST7735/Src/lcd.s
+
+# target to generate assembly for a file
+Drivers/ST7735/Src/lcd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.s
+.PHONY : Drivers/ST7735/Src/lcd.c.s
+
+Drivers/ST7735/Src/logo_128_160.obj: Drivers/ST7735/Src/logo_128_160.c.obj
+
+.PHONY : Drivers/ST7735/Src/logo_128_160.obj
+
+# target to build an object file
+Drivers/ST7735/Src/logo_128_160.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.obj
+.PHONY : Drivers/ST7735/Src/logo_128_160.c.obj
+
+Drivers/ST7735/Src/logo_128_160.i: Drivers/ST7735/Src/logo_128_160.c.i
+
+.PHONY : Drivers/ST7735/Src/logo_128_160.i
+
+# target to preprocess a source file
+Drivers/ST7735/Src/logo_128_160.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.i
+.PHONY : Drivers/ST7735/Src/logo_128_160.c.i
+
+Drivers/ST7735/Src/logo_128_160.s: Drivers/ST7735/Src/logo_128_160.c.s
+
+.PHONY : Drivers/ST7735/Src/logo_128_160.s
+
+# target to generate assembly for a file
+Drivers/ST7735/Src/logo_128_160.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.s
+.PHONY : Drivers/ST7735/Src/logo_128_160.c.s
+
+Drivers/ST7735/Src/logo_160_80.obj: Drivers/ST7735/Src/logo_160_80.c.obj
+
+.PHONY : Drivers/ST7735/Src/logo_160_80.obj
+
+# target to build an object file
+Drivers/ST7735/Src/logo_160_80.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.obj
+.PHONY : Drivers/ST7735/Src/logo_160_80.c.obj
+
+Drivers/ST7735/Src/logo_160_80.i: Drivers/ST7735/Src/logo_160_80.c.i
+
+.PHONY : Drivers/ST7735/Src/logo_160_80.i
+
+# target to preprocess a source file
+Drivers/ST7735/Src/logo_160_80.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.i
+.PHONY : Drivers/ST7735/Src/logo_160_80.c.i
+
+Drivers/ST7735/Src/logo_160_80.s: Drivers/ST7735/Src/logo_160_80.c.s
+
+.PHONY : Drivers/ST7735/Src/logo_160_80.s
+
+# target to generate assembly for a file
+Drivers/ST7735/Src/logo_160_80.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.s
+.PHONY : Drivers/ST7735/Src/logo_160_80.c.s
+
+Drivers/ST7735/Src/st7735.obj: Drivers/ST7735/Src/st7735.c.obj
+
+.PHONY : Drivers/ST7735/Src/st7735.obj
+
+# target to build an object file
+Drivers/ST7735/Src/st7735.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.obj
+.PHONY : Drivers/ST7735/Src/st7735.c.obj
+
+Drivers/ST7735/Src/st7735.i: Drivers/ST7735/Src/st7735.c.i
+
+.PHONY : Drivers/ST7735/Src/st7735.i
+
+# target to preprocess a source file
+Drivers/ST7735/Src/st7735.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.i
+.PHONY : Drivers/ST7735/Src/st7735.c.i
+
+Drivers/ST7735/Src/st7735.s: Drivers/ST7735/Src/st7735.c.s
+
+.PHONY : Drivers/ST7735/Src/st7735.s
+
+# target to generate assembly for a file
+Drivers/ST7735/Src/st7735.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.s
+.PHONY : Drivers/ST7735/Src/st7735.c.s
+
+Drivers/ST7735/Src/st7735_reg.obj: Drivers/ST7735/Src/st7735_reg.c.obj
+
+.PHONY : Drivers/ST7735/Src/st7735_reg.obj
+
+# target to build an object file
+Drivers/ST7735/Src/st7735_reg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.obj
+.PHONY : Drivers/ST7735/Src/st7735_reg.c.obj
+
+Drivers/ST7735/Src/st7735_reg.i: Drivers/ST7735/Src/st7735_reg.c.i
+
+.PHONY : Drivers/ST7735/Src/st7735_reg.i
+
+# target to preprocess a source file
+Drivers/ST7735/Src/st7735_reg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.i
+.PHONY : Drivers/ST7735/Src/st7735_reg.c.i
+
+Drivers/ST7735/Src/st7735_reg.s: Drivers/ST7735/Src/st7735_reg.c.s
+
+.PHONY : Drivers/ST7735/Src/st7735_reg.s
+
+# target to generate assembly for a file
+Drivers/ST7735/Src/st7735_reg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.s
+.PHONY : Drivers/ST7735/Src/st7735_reg.c.s
+
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
 
 .PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj
@@ -1363,6 +1741,48 @@ help:
 	@echo "... Core/Src/usart.obj"
 	@echo "... Core/Src/usart.i"
 	@echo "... Core/Src/usart.s"
+	@echo "... Drivers/Camera/Src/camera.obj"
+	@echo "... Drivers/Camera/Src/camera.i"
+	@echo "... Drivers/Camera/Src/camera.s"
+	@echo "... Drivers/Camera/Src/ov2640.obj"
+	@echo "... Drivers/Camera/Src/ov2640.i"
+	@echo "... Drivers/Camera/Src/ov2640.s"
+	@echo "... Drivers/Camera/Src/ov2640_regs.obj"
+	@echo "... Drivers/Camera/Src/ov2640_regs.i"
+	@echo "... Drivers/Camera/Src/ov2640_regs.s"
+	@echo "... Drivers/Camera/Src/ov5640.obj"
+	@echo "... Drivers/Camera/Src/ov5640.i"
+	@echo "... Drivers/Camera/Src/ov5640.s"
+	@echo "... Drivers/Camera/Src/ov5640_regs.obj"
+	@echo "... Drivers/Camera/Src/ov5640_regs.i"
+	@echo "... Drivers/Camera/Src/ov5640_regs.s"
+	@echo "... Drivers/Camera/Src/ov7670.obj"
+	@echo "... Drivers/Camera/Src/ov7670.i"
+	@echo "... Drivers/Camera/Src/ov7670.s"
+	@echo "... Drivers/Camera/Src/ov7670_regs.obj"
+	@echo "... Drivers/Camera/Src/ov7670_regs.i"
+	@echo "... Drivers/Camera/Src/ov7670_regs.s"
+	@echo "... Drivers/Camera/Src/ov7725.obj"
+	@echo "... Drivers/Camera/Src/ov7725.i"
+	@echo "... Drivers/Camera/Src/ov7725.s"
+	@echo "... Drivers/Camera/Src/ov7725_regs.obj"
+	@echo "... Drivers/Camera/Src/ov7725_regs.i"
+	@echo "... Drivers/Camera/Src/ov7725_regs.s"
+	@echo "... Drivers/ST7735/Src/lcd.obj"
+	@echo "... Drivers/ST7735/Src/lcd.i"
+	@echo "... Drivers/ST7735/Src/lcd.s"
+	@echo "... Drivers/ST7735/Src/logo_128_160.obj"
+	@echo "... Drivers/ST7735/Src/logo_128_160.i"
+	@echo "... Drivers/ST7735/Src/logo_128_160.s"
+	@echo "... Drivers/ST7735/Src/logo_160_80.obj"
+	@echo "... Drivers/ST7735/Src/logo_160_80.i"
+	@echo "... Drivers/ST7735/Src/logo_160_80.s"
+	@echo "... Drivers/ST7735/Src/st7735.obj"
+	@echo "... Drivers/ST7735/Src/st7735.i"
+	@echo "... Drivers/ST7735/Src/st7735.s"
+	@echo "... Drivers/ST7735/Src/st7735_reg.obj"
+	@echo "... Drivers/ST7735/Src/st7735_reg.i"
+	@echo "... Drivers/ST7735/Src/st7735_reg.s"
 	@echo "... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj"
 	@echo "... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.i"
 	@echo "... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.s"
