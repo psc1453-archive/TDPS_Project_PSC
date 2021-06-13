@@ -146,23 +146,17 @@ void MX_LPTIM4_Init(void)
 void HAL_LPTIM_MspInit(LPTIM_HandleTypeDef* lptimHandle)
 {
 
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
   if(lptimHandle->Instance==LPTIM1)
   {
   /* USER CODE BEGIN LPTIM1_MspInit 0 */
 
   /* USER CODE END LPTIM1_MspInit 0 */
-  /** Initializes the peripherals clock
-  */
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LPTIM1;
-    PeriphClkInitStruct.Lptim1ClockSelection = RCC_LPTIM1CLKSOURCE_D2PCLK1;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-    {
-      Error_Handler();
-    }
-
     /* LPTIM1 clock enable */
     __HAL_RCC_LPTIM1_CLK_ENABLE();
+
+    /* LPTIM1 interrupt Init */
+    HAL_NVIC_SetPriority(LPTIM1_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(LPTIM1_IRQn);
   /* USER CODE BEGIN LPTIM1_MspInit 1 */
 
   /* USER CODE END LPTIM1_MspInit 1 */
@@ -172,18 +166,12 @@ void HAL_LPTIM_MspInit(LPTIM_HandleTypeDef* lptimHandle)
   /* USER CODE BEGIN LPTIM2_MspInit 0 */
 
   /* USER CODE END LPTIM2_MspInit 0 */
-
-  /** Initializes the peripherals clock
-  */
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LPTIM2;
-    PeriphClkInitStruct.Lptim2ClockSelection = RCC_LPTIM2CLKSOURCE_D3PCLK1;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-    {
-      Error_Handler();
-    }
-
     /* LPTIM2 clock enable */
     __HAL_RCC_LPTIM2_CLK_ENABLE();
+
+    /* LPTIM2 interrupt Init */
+    HAL_NVIC_SetPriority(LPTIM2_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(LPTIM2_IRQn);
   /* USER CODE BEGIN LPTIM2_MspInit 1 */
 
   /* USER CODE END LPTIM2_MspInit 1 */
@@ -193,18 +181,12 @@ void HAL_LPTIM_MspInit(LPTIM_HandleTypeDef* lptimHandle)
   /* USER CODE BEGIN LPTIM3_MspInit 0 */
 
   /* USER CODE END LPTIM3_MspInit 0 */
-
-  /** Initializes the peripherals clock
-  */
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LPTIM3;
-    PeriphClkInitStruct.Lptim345ClockSelection = RCC_LPTIM345CLKSOURCE_D3PCLK1;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-    {
-      Error_Handler();
-    }
-
     /* LPTIM3 clock enable */
     __HAL_RCC_LPTIM3_CLK_ENABLE();
+
+    /* LPTIM3 interrupt Init */
+    HAL_NVIC_SetPriority(LPTIM3_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(LPTIM3_IRQn);
   /* USER CODE BEGIN LPTIM3_MspInit 1 */
 
   /* USER CODE END LPTIM3_MspInit 1 */
@@ -214,18 +196,12 @@ void HAL_LPTIM_MspInit(LPTIM_HandleTypeDef* lptimHandle)
   /* USER CODE BEGIN LPTIM4_MspInit 0 */
 
   /* USER CODE END LPTIM4_MspInit 0 */
-
-  /** Initializes the peripherals clock
-  */
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LPTIM4;
-    PeriphClkInitStruct.Lptim345ClockSelection = RCC_LPTIM345CLKSOURCE_D3PCLK1;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-    {
-      Error_Handler();
-    }
-
     /* LPTIM4 clock enable */
     __HAL_RCC_LPTIM4_CLK_ENABLE();
+
+    /* LPTIM4 interrupt Init */
+    HAL_NVIC_SetPriority(LPTIM4_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(LPTIM4_IRQn);
   /* USER CODE BEGIN LPTIM4_MspInit 1 */
 
   /* USER CODE END LPTIM4_MspInit 1 */
@@ -242,6 +218,9 @@ void HAL_LPTIM_MspDeInit(LPTIM_HandleTypeDef* lptimHandle)
   /* USER CODE END LPTIM1_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_LPTIM1_CLK_DISABLE();
+
+    /* LPTIM1 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(LPTIM1_IRQn);
   /* USER CODE BEGIN LPTIM1_MspDeInit 1 */
 
   /* USER CODE END LPTIM1_MspDeInit 1 */
@@ -253,6 +232,9 @@ void HAL_LPTIM_MspDeInit(LPTIM_HandleTypeDef* lptimHandle)
   /* USER CODE END LPTIM2_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_LPTIM2_CLK_DISABLE();
+
+    /* LPTIM2 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(LPTIM2_IRQn);
   /* USER CODE BEGIN LPTIM2_MspDeInit 1 */
 
   /* USER CODE END LPTIM2_MspDeInit 1 */
@@ -264,6 +246,9 @@ void HAL_LPTIM_MspDeInit(LPTIM_HandleTypeDef* lptimHandle)
   /* USER CODE END LPTIM3_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_LPTIM3_CLK_DISABLE();
+
+    /* LPTIM3 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(LPTIM3_IRQn);
   /* USER CODE BEGIN LPTIM3_MspDeInit 1 */
 
   /* USER CODE END LPTIM3_MspDeInit 1 */
@@ -275,6 +260,9 @@ void HAL_LPTIM_MspDeInit(LPTIM_HandleTypeDef* lptimHandle)
   /* USER CODE END LPTIM4_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_LPTIM4_CLK_DISABLE();
+
+    /* LPTIM4 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(LPTIM4_IRQn);
   /* USER CODE BEGIN LPTIM4_MspDeInit 1 */
 
   /* USER CODE END LPTIM4_MspDeInit 1 */

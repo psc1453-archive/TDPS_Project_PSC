@@ -34,6 +34,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/Color.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/DS1302.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/HCSR04.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/crc.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/dcmi.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/delay.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj"

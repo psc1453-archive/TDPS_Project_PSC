@@ -196,6 +196,33 @@ Core/Src/DS1302.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.s
 .PHONY : Core/Src/DS1302.c.s
 
+Core/Src/HCSR04.obj: Core/Src/HCSR04.c.obj
+
+.PHONY : Core/Src/HCSR04.obj
+
+# target to build an object file
+Core/Src/HCSR04.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.obj
+.PHONY : Core/Src/HCSR04.c.obj
+
+Core/Src/HCSR04.i: Core/Src/HCSR04.c.i
+
+.PHONY : Core/Src/HCSR04.i
+
+# target to preprocess a source file
+Core/Src/HCSR04.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.i
+.PHONY : Core/Src/HCSR04.c.i
+
+Core/Src/HCSR04.s: Core/Src/HCSR04.c.s
+
+.PHONY : Core/Src/HCSR04.s
+
+# target to generate assembly for a file
+Core/Src/HCSR04.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.s
+.PHONY : Core/Src/HCSR04.c.s
+
 Core/Src/crc.obj: Core/Src/crc.c.obj
 
 .PHONY : Core/Src/crc.obj
@@ -1813,6 +1840,9 @@ help:
 	@echo "... Core/Src/DS1302.obj"
 	@echo "... Core/Src/DS1302.i"
 	@echo "... Core/Src/DS1302.s"
+	@echo "... Core/Src/HCSR04.obj"
+	@echo "... Core/Src/HCSR04.i"
+	@echo "... Core/Src/HCSR04.s"
 	@echo "... Core/Src/crc.obj"
 	@echo "... Core/Src/crc.i"
 	@echo "... Core/Src/crc.s"

@@ -1,6 +1,6 @@
 Neural Network Tools for STM32AI v1.4.1 (STM.ai v6.0.0-RC6)
-Created date       : 2021-06-14 01:24:31
-Parameters         : generate --name network -m /Users/psc/Template/final_sim.onnx --type onnx --compression 1 --verbosity 1 --workspace /var/folders/qd/tb6sbtld2mb2n5ywrnrm9rp80000gn/T/mxAI_workspace1163524260253171365916405968184448 --output /Users/psc/.stm32cubemx
+Created date       : 2021-06-14 04:58:10
+Parameters         : generate --name network -m /Users/psc/Template/final_sim.onnx --type onnx --compression 1 --verbosity 1 --workspace /var/folders/qd/tb6sbtld2mb2n5ywrnrm9rp80000gn/T/mxAI_workspace129171524229957745809419767379082 --output /Users/psc/.stm32cubemx
 
 Exec/report summary (generate)
 ------------------------------------------------------------------------------------------------------------------------
@@ -9,7 +9,7 @@ type               : onnx
 c_name             : network
 compression        : None
 quantize           : None
-workspace dir      : /private/var/folders/qd/tb6sbtld2mb2n5ywrnrm9rp80000gn/T/mxAI_workspace1163524260253171365916405968184448
+workspace dir      : /private/var/folders/qd/tb6sbtld2mb2n5ywrnrm9rp80000gn/T/mxAI_workspace129171524229957745809419767379082
 output dir         : /Users/psc/.stm32cubemx
 
 model_name         : final_sim

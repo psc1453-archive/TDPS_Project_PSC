@@ -23,6 +23,8 @@
 #include "stm32h7xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "HCSR04.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,7 +44,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-
+extern HCSR04 hcsr04_front;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -58,6 +60,10 @@
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_dcmi;
 extern DCMI_HandleTypeDef hdcmi;
+extern LPTIM_HandleTypeDef hlptim1;
+extern LPTIM_HandleTypeDef hlptim2;
+extern LPTIM_HandleTypeDef hlptim3;
+extern LPTIM_HandleTypeDef hlptim4;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -285,7 +291,77 @@ void DCMI_IRQHandler(void)
   /* USER CODE END DCMI_IRQn 1 */
 }
 
-/* USER CODE BEGIN 1 */
+/**
+  * @brief This function handles LPTIM1 global interrupt.
+  */
+void LPTIM1_IRQHandler(void)
+{
+  /* USER CODE BEGIN LPTIM1_IRQn 0 */
 
+  /* USER CODE END LPTIM1_IRQn 0 */
+  HAL_LPTIM_IRQHandler(&hlptim1);
+  /* USER CODE BEGIN LPTIM1_IRQn 1 */
+
+  /* USER CODE END LPTIM1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles LPTIM2 global interrupt.
+  */
+void LPTIM2_IRQHandler(void)
+{
+  /* USER CODE BEGIN LPTIM2_IRQn 0 */
+
+  /* USER CODE END LPTIM2_IRQn 0 */
+  HAL_LPTIM_IRQHandler(&hlptim2);
+  /* USER CODE BEGIN LPTIM2_IRQn 1 */
+
+  /* USER CODE END LPTIM2_IRQn 1 */
+}
+
+/**
+  * @brief This function handles LPTIM3 global interrupt.
+  */
+void LPTIM3_IRQHandler(void)
+{
+  /* USER CODE BEGIN LPTIM3_IRQn 0 */
+
+  /* USER CODE END LPTIM3_IRQn 0 */
+  HAL_LPTIM_IRQHandler(&hlptim3);
+  /* USER CODE BEGIN LPTIM3_IRQn 1 */
+
+  /* USER CODE END LPTIM3_IRQn 1 */
+}
+
+/**
+  * @brief This function handles LPTIM4 global interrupt.
+  */
+void LPTIM4_IRQHandler(void)
+{
+  /* USER CODE BEGIN LPTIM4_IRQn 0 */
+
+  /* USER CODE END LPTIM4_IRQn 0 */
+  HAL_LPTIM_IRQHandler(&hlptim4);
+  /* USER CODE BEGIN LPTIM4_IRQn 1 */
+
+  /* USER CODE END LPTIM4_IRQn 1 */
+}
+
+/* USER CODE BEGIN 1 */
+void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
+{
+    if(hcsr04_front.hlptim == hlptim)
+    {
+        HCSR04_Auto_Reload_Handler(&hcsr04_front);
+    }
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if(hcsr04_front.connector.HCSR04_ECHO_Pin == GPIO_Pin)
+    {
+        HCSR04_EXTI_Handler(&hcsr04_front);
+    }
+}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
