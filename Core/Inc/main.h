@@ -91,6 +91,10 @@ void Error_Handler(void);
 #define ANGLE_RX_GPIO_Port GPIOB
 #define ANGLE_TX_Pin GPIO_PIN_13
 #define ANGLE_TX_GPIO_Port GPIOB
+#define DEBUG_TX_Pin GPIO_PIN_14
+#define DEBUG_TX_GPIO_Port GPIOB
+#define DEBUG_RX_Pin GPIO_PIN_15
+#define DEBUG_RX_GPIO_Port GPIOB
 #define HC12_TX_Pin GPIO_PIN_8
 #define HC12_TX_GPIO_Port GPIOD
 #define HC12_RX_Pin GPIO_PIN_9

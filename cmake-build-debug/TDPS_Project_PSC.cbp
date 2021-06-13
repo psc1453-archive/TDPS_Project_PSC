@@ -188,6 +188,9 @@
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/tim.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/uart_putc.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/usart.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>

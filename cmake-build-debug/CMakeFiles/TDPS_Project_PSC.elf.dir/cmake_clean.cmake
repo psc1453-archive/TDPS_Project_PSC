@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj"
+  "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj"

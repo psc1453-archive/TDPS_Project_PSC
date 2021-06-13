@@ -45,6 +45,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/syscalls.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/system_stm32h7xx.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/tim.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/uart_putc.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/usart.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/camera.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov2640.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj"

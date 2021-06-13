@@ -493,6 +493,33 @@ Core/Src/tim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.s
 .PHONY : Core/Src/tim.c.s
 
+Core/Src/uart_putc.obj: Core/Src/uart_putc.c.obj
+
+.PHONY : Core/Src/uart_putc.obj
+
+# target to build an object file
+Core/Src/uart_putc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj
+.PHONY : Core/Src/uart_putc.c.obj
+
+Core/Src/uart_putc.i: Core/Src/uart_putc.c.i
+
+.PHONY : Core/Src/uart_putc.i
+
+# target to preprocess a source file
+Core/Src/uart_putc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.i
+.PHONY : Core/Src/uart_putc.c.i
+
+Core/Src/uart_putc.s: Core/Src/uart_putc.c.s
+
+.PHONY : Core/Src/uart_putc.s
+
+# target to generate assembly for a file
+Core/Src/uart_putc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.s
+.PHONY : Core/Src/uart_putc.c.s
+
 Core/Src/usart.obj: Core/Src/usart.c.obj
 
 .PHONY : Core/Src/usart.obj
@@ -1738,6 +1765,9 @@ help:
 	@echo "... Core/Src/tim.obj"
 	@echo "... Core/Src/tim.i"
 	@echo "... Core/Src/tim.s"
+	@echo "... Core/Src/uart_putc.obj"
+	@echo "... Core/Src/uart_putc.i"
+	@echo "... Core/Src/uart_putc.s"
 	@echo "... Core/Src/usart.obj"
 	@echo "... Core/Src/usart.i"
 	@echo "... Core/Src/usart.s"
