@@ -34,6 +34,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/crc.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/dcmi.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/delay.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/dma.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/gpio.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/i2c.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj"

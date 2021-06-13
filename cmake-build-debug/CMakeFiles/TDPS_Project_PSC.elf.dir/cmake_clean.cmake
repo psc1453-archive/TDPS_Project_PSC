@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj"
+  "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj"

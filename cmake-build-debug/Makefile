@@ -196,6 +196,33 @@ Core/Src/dcmi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.s
 .PHONY : Core/Src/dcmi.c.s
 
+Core/Src/delay.obj: Core/Src/delay.c.obj
+
+.PHONY : Core/Src/delay.obj
+
+# target to build an object file
+Core/Src/delay.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj
+.PHONY : Core/Src/delay.c.obj
+
+Core/Src/delay.i: Core/Src/delay.c.i
+
+.PHONY : Core/Src/delay.i
+
+# target to preprocess a source file
+Core/Src/delay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.i
+.PHONY : Core/Src/delay.c.i
+
+Core/Src/delay.s: Core/Src/delay.c.s
+
+.PHONY : Core/Src/delay.s
+
+# target to generate assembly for a file
+Core/Src/delay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.s
+.PHONY : Core/Src/delay.c.s
+
 Core/Src/dma.obj: Core/Src/dma.c.obj
 
 .PHONY : Core/Src/dma.obj
@@ -1732,6 +1759,9 @@ help:
 	@echo "... Core/Src/dcmi.obj"
 	@echo "... Core/Src/dcmi.i"
 	@echo "... Core/Src/dcmi.s"
+	@echo "... Core/Src/delay.obj"
+	@echo "... Core/Src/delay.i"
+	@echo "... Core/Src/delay.s"
 	@echo "... Core/Src/dma.obj"
 	@echo "... Core/Src/dma.i"
 	@echo "... Core/Src/dma.s"
