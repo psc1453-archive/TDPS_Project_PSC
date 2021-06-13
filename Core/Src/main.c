@@ -120,14 +120,13 @@ int main(void)
   MX_USART1_UART_Init();
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
+      /* USER CODE END WHILE */
 
 //  MX_X_CUBE_AI_Process();
     /* USER CODE BEGIN 3 */
