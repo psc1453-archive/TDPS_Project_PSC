@@ -61,6 +61,7 @@ void EXTI4_IRQHandler(void);
 void DMA1_Stream0_IRQHandler(void);
 void EXTI9_5_IRQHandler(void);
 void EXTI15_10_IRQHandler(void);
+void UART5_IRQHandler(void);
 void DCMI_IRQHandler(void);
 void LPTIM1_IRQHandler(void);
 void LPTIM2_IRQHandler(void);

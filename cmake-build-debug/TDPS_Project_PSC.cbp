@@ -119,6 +119,9 @@
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/HCSR04.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/JY901S.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/RTE_Components.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
@@ -168,6 +171,9 @@
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/HCSR04.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/JY901S.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/crc.c">

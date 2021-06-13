@@ -223,6 +223,33 @@ Core/Src/HCSR04.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.s
 .PHONY : Core/Src/HCSR04.c.s
 
+Core/Src/JY901S.obj: Core/Src/JY901S.c.obj
+
+.PHONY : Core/Src/JY901S.obj
+
+# target to build an object file
+Core/Src/JY901S.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj
+.PHONY : Core/Src/JY901S.c.obj
+
+Core/Src/JY901S.i: Core/Src/JY901S.c.i
+
+.PHONY : Core/Src/JY901S.i
+
+# target to preprocess a source file
+Core/Src/JY901S.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.i
+.PHONY : Core/Src/JY901S.c.i
+
+Core/Src/JY901S.s: Core/Src/JY901S.c.s
+
+.PHONY : Core/Src/JY901S.s
+
+# target to generate assembly for a file
+Core/Src/JY901S.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.s
+.PHONY : Core/Src/JY901S.c.s
+
 Core/Src/crc.obj: Core/Src/crc.c.obj
 
 .PHONY : Core/Src/crc.obj
@@ -1843,6 +1870,9 @@ help:
 	@echo "... Core/Src/HCSR04.obj"
 	@echo "... Core/Src/HCSR04.i"
 	@echo "... Core/Src/HCSR04.s"
+	@echo "... Core/Src/JY901S.obj"
+	@echo "... Core/Src/JY901S.i"
+	@echo "... Core/Src/JY901S.s"
 	@echo "... Core/Src/crc.obj"
 	@echo "... Core/Src/crc.i"
 	@echo "... Core/Src/crc.s"

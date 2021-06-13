@@ -25,6 +25,7 @@
 /* USER CODE BEGIN Includes */
 #include "HCSR04.h"
 #include <stdio.h>
+#include "JY901S.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,7 +45,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-extern HCSR04 hcsr04_front;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -64,6 +64,7 @@ extern LPTIM_HandleTypeDef hlptim1;
 extern LPTIM_HandleTypeDef hlptim2;
 extern LPTIM_HandleTypeDef hlptim3;
 extern LPTIM_HandleTypeDef hlptim4;
+extern UART_HandleTypeDef huart5;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -278,6 +279,20 @@ void EXTI15_10_IRQHandler(void)
 }
 
 /**
+  * @brief This function handles UART5 global interrupt.
+  */
+void UART5_IRQHandler(void)
+{
+  /* USER CODE BEGIN UART5_IRQn 0 */
+
+  /* USER CODE END UART5_IRQn 0 */
+  HAL_UART_IRQHandler(&huart5);
+  /* USER CODE BEGIN UART5_IRQn 1 */
+
+  /* USER CODE END UART5_IRQn 1 */
+}
+
+/**
   * @brief This function handles DCMI global interrupt.
   */
 void DCMI_IRQHandler(void)
@@ -348,20 +363,6 @@ void LPTIM4_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
-void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
-{
-    if(hcsr04_front.hlptim == hlptim)
-    {
-        HCSR04_Auto_Reload_Handler(&hcsr04_front);
-    }
-}
 
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-    if(hcsr04_front.connector.HCSR04_ECHO_Pin == GPIO_Pin)
-    {
-        HCSR04_EXTI_Handler(&hcsr04_front);
-    }
-}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

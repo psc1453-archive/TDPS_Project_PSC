@@ -143,6 +143,51 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.obj: ../Drivers/STM32H7xx_
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.obj: ../Core/Src/HCSR04.c
 
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Core/Inc/JY901S.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Core/Inc/stm32h7xx_hal_conf.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/cmsis_armcc.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/cmsis_armclang.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/cmsis_armclang_ltm.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/cmsis_compiler.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/cmsis_gcc.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/cmsis_iccarm.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/cmsis_version.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/core_cm7.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/CMSIS/Include/mpu_armv7.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dcmi.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_lptim.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj: ../Core/Src/JY901S.c
+
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj: ../Core/Inc/crc.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj: ../Core/Inc/main.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj: ../Core/Inc/stm32h7xx_hal_conf.h
@@ -467,6 +512,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj: ../Core/Src/lptim.c
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/Color.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/DS1302.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/HCSR04.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/JY901S.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/crc.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/dcmi.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/delay.h
@@ -619,6 +665,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: ../Drivers
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: ../Core/Src/stm32h7xx_hal_msp.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Core/Inc/HCSR04.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Core/Inc/JY901S.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Core/Inc/main.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Core/Inc/stm32h7xx_hal_conf.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Core/Inc/stm32h7xx_it.h
