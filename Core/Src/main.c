@@ -34,6 +34,8 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include "delay.h"
+#include "Color.h"
+#include "DS1302.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

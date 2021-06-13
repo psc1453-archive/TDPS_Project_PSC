@@ -76,9 +76,35 @@ include CMakeFiles/TDPS_Project_PSC.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj: ../Core/Src/Color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/Color.c
+
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.i"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/Color.c > CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.i
+
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.s"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/Color.c -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.s
+
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj: ../Core/Src/DS1302.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/DS1302.c
+
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.i"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/DS1302.c > CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.i
+
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.s"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/DS1302.c -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.s
+
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj: ../Core/Src/crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/crc.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.i: cmake_force
@@ -91,7 +117,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj: ../Core/Src/dcmi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/dcmi.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.i: cmake_force
@@ -104,7 +130,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj: ../Core/Src/delay.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/delay.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.i: cmake_force
@@ -117,7 +143,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.obj: ../Core/Src/dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/dma.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.i: cmake_force
@@ -130,7 +156,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dma.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.obj: ../Core/Src/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/gpio.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -143,7 +169,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/gpio.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj: ../Core/Src/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/i2c.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.i: cmake_force
@@ -156,7 +182,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj: ../Core/Src/lptim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/lptim.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.i: cmake_force
@@ -169,7 +195,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/main.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.i: cmake_force
@@ -182,7 +208,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.obj: ../Core/Src/spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/spi.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.i: cmake_force
@@ -195,7 +221,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: ../Core/Src/stm32h7xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/stm32h7xx_hal_msp.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.i: cmake_force
@@ -208,7 +234,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Core/Src/stm32h7xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/stm32h7xx_it.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.i: cmake_force
@@ -221,7 +247,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/syscalls.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -234,7 +260,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj: ../Core/Src/system_stm32h7xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/system_stm32h7xx.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.i: cmake_force
@@ -247,7 +273,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/system_stm32h7xx.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj: ../Core/Src/tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/tim.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -260,7 +286,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/tim.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj: ../Core/Src/uart_putc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/uart_putc.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.i: cmake_force
@@ -273,7 +299,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/uart_putc.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj: ../Core/Src/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/usart.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -286,7 +312,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj: ../Drivers/Camera/Src/camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/camera.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.i: cmake_force
@@ -299,7 +325,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/camera.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj: ../Drivers/Camera/Src/ov2640.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov2640.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.i: cmake_force
@@ -312,7 +338,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.obj: ../Drivers/Camera/Src/ov2640_regs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov2640_regs.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.i: cmake_force
@@ -325,7 +351,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov2640_regs.c.s: cmake_fo
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.obj: ../Drivers/Camera/Src/ov5640.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov5640.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.i: cmake_force
@@ -338,7 +364,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.obj: ../Drivers/Camera/Src/ov5640_regs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov5640_regs.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.i: cmake_force
@@ -351,7 +377,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov5640_regs.c.s: cmake_fo
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.obj: ../Drivers/Camera/Src/ov7670.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7670.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.i: cmake_force
@@ -364,7 +390,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.obj: ../Drivers/Camera/Src/ov7670_regs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7670_regs.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.i: cmake_force
@@ -377,7 +403,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7670_regs.c.s: cmake_fo
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.obj: ../Drivers/Camera/Src/ov7725.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7725.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.i: cmake_force
@@ -390,7 +416,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.obj: ../Drivers/Camera/Src/ov7725_regs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/Camera/Src/ov7725_regs.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.i: cmake_force
@@ -403,7 +429,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/Camera/Src/ov7725_regs.c.s: cmake_fo
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.obj: ../Drivers/ST7735/Src/lcd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/lcd.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.i: cmake_force
@@ -416,7 +442,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/lcd.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.obj: ../Drivers/ST7735/Src/logo_128_160.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/logo_128_160.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.i: cmake_force
@@ -429,7 +455,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_128_160.c.s: cmake_f
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.obj: ../Drivers/ST7735/Src/logo_160_80.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/logo_160_80.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.i: cmake_force
@@ -442,7 +468,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/logo_160_80.c.s: cmake_fo
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.obj: ../Drivers/ST7735/Src/st7735.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/st7735.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.i: cmake_force
@@ -455,7 +481,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.obj: ../Drivers/ST7735/Src/st7735_reg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/ST7735/Src/st7735_reg.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.i: cmake_force
@@ -468,7 +494,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/ST7735/Src/st7735_reg.c.s: cmake_for
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i: cmake_force
@@ -481,7 +507,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i: cmake_force
@@ -494,7 +520,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c.i: cmake_force
@@ -507,7 +533,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c.i: cmake_force
@@ -520,7 +546,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dcmi.c.i: cmake_force
@@ -533,7 +559,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i: cmake_force
@@ -546,7 +572,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i: cmake_force
@@ -559,7 +585,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i: cmake_force
@@ -572,7 +598,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i: cmake_force
@@ -585,7 +611,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i: cmake_force
@@ -598,7 +624,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i: cmake_force
@@ -611,7 +637,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i: cmake_force
@@ -624,7 +650,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i: cmake_force
@@ -637,7 +663,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i: cmake_force
@@ -650,7 +676,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_lptim.c.i: cmake_force
@@ -663,7 +689,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i: cmake_force
@@ -676,7 +702,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i: cmake_force
@@ -689,7 +715,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i: cmake_force
@@ -702,7 +728,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i: cmake_force
@@ -715,7 +741,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i: cmake_force
@@ -728,7 +754,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.i: cmake_force
@@ -741,7 +767,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.i: cmake_force
@@ -754,7 +780,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i: cmake_force
@@ -767,7 +793,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i: cmake_force
@@ -780,7 +806,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i: cmake_force
@@ -793,7 +819,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i: cmake_force
@@ -806,7 +832,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_h
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj: ../X-CUBE-AI/App/app_x-cube-ai.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/app_x-cube-ai.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.i: cmake_force
@@ -819,7 +845,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj: ../X-CUBE-AI/App/network.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.i: cmake_force
@@ -832,7 +858,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj: ../X-CUBE-AI/App/network_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_data.c
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.i: cmake_force
@@ -845,11 +871,13 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.s: cmake_force
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj: ../startup/startup_stm32h743xx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building ASM object CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building ASM object CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj"
 	/usr/local/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/startup/startup_stm32h743xx.s
 
 # Object files for target TDPS_Project_PSC.elf
 TDPS_Project_PSC_elf_OBJECTS = \
+"CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj" \
+"CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj" \
 "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj" \
 "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj" \
 "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj" \
@@ -914,6 +942,8 @@ TDPS_Project_PSC_elf_OBJECTS = \
 # External object files for target TDPS_Project_PSC.elf
 TDPS_Project_PSC_elf_EXTERNAL_OBJECTS =
 
+TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj
+TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj
@@ -976,7 +1006,7 @@ TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/build.make
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Linking C executable TDPS_Project_PSC.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Linking C executable TDPS_Project_PSC.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TDPS_Project_PSC.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/TDPS_Project_PSC.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/TDPS_Project_PSC.bin"

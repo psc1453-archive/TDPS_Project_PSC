@@ -142,6 +142,60 @@ TDPS_Project_PSC.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/build
 .PHONY : TDPS_Project_PSC.elf/fast
 
+Core/Src/Color.obj: Core/Src/Color.c.obj
+
+.PHONY : Core/Src/Color.obj
+
+# target to build an object file
+Core/Src/Color.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.obj
+.PHONY : Core/Src/Color.c.obj
+
+Core/Src/Color.i: Core/Src/Color.c.i
+
+.PHONY : Core/Src/Color.i
+
+# target to preprocess a source file
+Core/Src/Color.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.i
+.PHONY : Core/Src/Color.c.i
+
+Core/Src/Color.s: Core/Src/Color.c.s
+
+.PHONY : Core/Src/Color.s
+
+# target to generate assembly for a file
+Core/Src/Color.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/Color.c.s
+.PHONY : Core/Src/Color.c.s
+
+Core/Src/DS1302.obj: Core/Src/DS1302.c.obj
+
+.PHONY : Core/Src/DS1302.obj
+
+# target to build an object file
+Core/Src/DS1302.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj
+.PHONY : Core/Src/DS1302.c.obj
+
+Core/Src/DS1302.i: Core/Src/DS1302.c.i
+
+.PHONY : Core/Src/DS1302.i
+
+# target to preprocess a source file
+Core/Src/DS1302.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.i
+.PHONY : Core/Src/DS1302.c.i
+
+Core/Src/DS1302.s: Core/Src/DS1302.c.s
+
+.PHONY : Core/Src/DS1302.s
+
+# target to generate assembly for a file
+Core/Src/DS1302.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.s
+.PHONY : Core/Src/DS1302.c.s
+
 Core/Src/crc.obj: Core/Src/crc.c.obj
 
 .PHONY : Core/Src/crc.obj
@@ -1753,6 +1807,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TDPS_Project_PSC.elf"
+	@echo "... Core/Src/Color.obj"
+	@echo "... Core/Src/Color.i"
+	@echo "... Core/Src/Color.s"
+	@echo "... Core/Src/DS1302.obj"
+	@echo "... Core/Src/DS1302.i"
+	@echo "... Core/Src/DS1302.s"
 	@echo "... Core/Src/crc.obj"
 	@echo "... Core/Src/crc.i"
 	@echo "... Core/Src/crc.s"
