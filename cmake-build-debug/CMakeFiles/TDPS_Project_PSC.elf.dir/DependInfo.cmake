@@ -37,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/HCSR04.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/JY901S.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/PID.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/PID.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/control.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/control.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/crc.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/dcmi.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/delay.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj"

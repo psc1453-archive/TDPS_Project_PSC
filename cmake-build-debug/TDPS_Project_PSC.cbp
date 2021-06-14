@@ -128,6 +128,12 @@
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/RTE_Components.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/angle_preset.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/control.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/crc.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
@@ -183,6 +189,9 @@
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/PID.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/control.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/crc.c">
