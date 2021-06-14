@@ -80,6 +80,10 @@ HCSR04_Connector hcsr04_connector_left = {
 };
 
 HCSR04 hcsr04_left;
+
+AngleFilterQueue angle_filter_queue = {{0}, 0, 0};
+
+JY901S jy901s;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -151,8 +155,11 @@ int main(void)
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
     Motor_Init(&motor_pair, motor_pair_connector, &htim4, &htim3, TIM_CHANNEL_1, TIM_CHANNEL_2);
+
     HCSR04_Init(&hcsr04_front, hcsr04_connector_front, &hlptim1, 2);
     HCSR04_Init(&hcsr04_left, hcsr04_connector_left, &hlptim2, 2);
+
+    JY901S_Init(&jy901s, &huart5, &angle_filter_queue);
 
     /* USER CODE END 2 */
 
@@ -160,9 +167,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      HCSR04_Trig(&hcsr04_front);
-      HCSR04_Trig(&hcsr04_left);
-      printf("%f   %f\r\n", hcsr04_front.distance, hcsr04_left.distance);
+//      HCSR04_Trig(&hcsr04_front);
+//      HCSR04_Trig(&hcsr04_left);
+//      printf("%f   %f\r\n", hcsr04_front.distance, hcsr04_left.distance);
+      printf("%f\r\n", AngleGetLatestMean(&jy901s));
       HAL_Delay(100);
 
       /* USER CODE END WHILE */

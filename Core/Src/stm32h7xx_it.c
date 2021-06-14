@@ -68,6 +68,7 @@ extern UART_HandleTypeDef huart5;
 /* USER CODE BEGIN EV */
 extern HCSR04 hcsr04_front;
 extern HCSR04 hcsr04_left;
+extern JY901S jy901s;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -386,6 +387,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     else if(GPIO_Pin == hcsr04_left.connector.HCSR04_ECHO_Pin)
     {
         HCSR04_EXTI_Handler(&hcsr04_left);
+    }
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if(huart == jy901s.jy901s_uart)
+    {
+        Angle_UART_INT_Handler(&jy901s, huart);
     }
 }
 /* USER CODE END 1 */
