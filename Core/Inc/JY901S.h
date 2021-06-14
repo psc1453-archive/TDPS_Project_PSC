@@ -31,10 +31,10 @@ typedef struct
     union AngleBuffer angle_union_buffer;
     uint8_t uart_receive_buffer;
     float angle;
-    AngleFilterQueue angle_filter_queue;
+    AngleFilterQueue* angle_filter_queue;
 }JY901S;
 
-void JY901S_Init(JY901S* jy901s, UART_HandleTypeDef* jy901s_uart, AngleFilterQueue angle_filter_queue);
+void JY901S_Init(JY901S* jy901s, UART_HandleTypeDef* jy901s_uart, AngleFilterQueue* angle_filter_queue);
 
 void AngleFilterEnqueue(AngleFilterQueue* queue, float element);
 

@@ -4,7 +4,7 @@
 
 #include "JY901S.h"
 
-void JY901S_Init(JY901S* jy901s, UART_HandleTypeDef* jy901s_uart, AngleFilterQueue angle_filter_queue)
+void JY901S_Init(JY901S* jy901s, UART_HandleTypeDef* jy901s_uart, AngleFilterQueue* angle_filter_queue)
 {
     jy901s->angle_filter_queue = angle_filter_queue;
     jy901s->angle = 0;
@@ -55,7 +55,7 @@ float DecodeAngle(int16_t angle_raw)
 void AngleStoreAndEnqueue(JY901S* jy901s)
 {
     jy901s->angle = DecodeAngle(jy901s->angle_union_buffer.angle_raw);
-    AngleFilterEnqueue(&(jy901s->angle_filter_queue), jy901s->angle);
+    AngleFilterEnqueue(jy901s->angle_filter_queue, jy901s->angle);
 }
 
 float AngleGetLatest(JY901S* jy901s)
@@ -65,7 +65,7 @@ float AngleGetLatest(JY901S* jy901s)
 
 float AngleGetLatestMean(JY901S* jy901s)
 {
-    return AngleFilterDequeue(&(jy901s->angle_filter_queue));
+    return AngleFilterDequeue(jy901s->angle_filter_queue);
 }
 
 void Angle_UART_INT_Handler(JY901S* jy901s, UART_HandleTypeDef *huart)
