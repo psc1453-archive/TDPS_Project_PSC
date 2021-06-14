@@ -29,7 +29,7 @@ typedef struct
     int lptim_mhz;
 }HCSR04;
 
-void HCSR04_Init(HCSR04* hcsr04, HCSR04_Connector connector, LPTIM_HandleTypeDef* hlptimint, int lptim_mhz);
+void HCSR04_Init(HCSR04* hcsr04, HCSR04_Connector connector, LPTIM_HandleTypeDef* hlptim, int lptim_mhz);
 void HCSR04_Trig(HCSR04* hcsr04);
 
 // Put into void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
