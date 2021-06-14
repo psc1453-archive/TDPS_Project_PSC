@@ -17,6 +17,6 @@ typedef struct
 
 void PID_Init(PID_Controller* pid_controller, float target, float Kp, float Ki, float Kd);
 
-float PID_Out(PID_Controller* pid_controller, float new_detected_value);
+float PID_Out(PID_Controller* pid_controller, float new_error);
 
 #endif //TDPS_PROJECT_PSC_PID_H
