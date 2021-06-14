@@ -54,8 +54,8 @@ extern "C" {
 */
 /* Includes ------------------------------------------------------------------*/
 #include "ai_platform.h"
-#include "network.h"
-#include "network_data.h"
+#include "tdps_network.h"
+#include "tdps_network_data.h"
 
 void MX_X_CUBE_AI_Init(void);
 void MX_X_CUBE_AI_Process(void);

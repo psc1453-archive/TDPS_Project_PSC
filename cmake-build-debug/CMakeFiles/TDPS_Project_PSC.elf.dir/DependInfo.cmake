@@ -93,8 +93,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/app_x-cube-ai.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj"
-  "/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj"
-  "/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_data.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_data.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

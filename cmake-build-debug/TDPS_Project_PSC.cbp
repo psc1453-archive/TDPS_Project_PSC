@@ -560,22 +560,22 @@
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/app_x-cube-ai.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
-		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network.c">
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
-		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network.h">
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
-		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_config.h">
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_config.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
-		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_data.c">
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_data.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
-		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_data.h">
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_data.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
-		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_generate_report.txt">
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_generate_report.txt">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/constants_ai.h">

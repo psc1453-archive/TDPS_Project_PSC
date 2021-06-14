@@ -869,31 +869,31 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.s"
 	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/app_x-cube-ai.c -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.s
 
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj: ../X-CUBE-AI/App/network.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj"
-	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network.c
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj: ../X-CUBE-AI/App/tdps_network.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network.c
 
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.i"
-	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network.c > CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.i
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.i"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network.c > CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.i
 
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.s"
-	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network.c -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.s
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.s"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network.c -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.s
 
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj: ../X-CUBE-AI/App/network_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj"
-	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_data.c
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj: ../X-CUBE-AI/App/tdps_network_data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj -c /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_data.c
 
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.i"
-	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_data.c > CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.i
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.i"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_data.c > CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.i
 
-CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.s"
-	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/network_data.c -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.s
+CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.s"
+	/usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/psc/CLionProjects/TDPS_Project_PSC/X-CUBE-AI/App/tdps_network_data.c -o CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.s
 
 CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj: CMakeFiles/TDPS_Project_PSC.elf.dir/flags.make
 CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj: ../startup/startup_stm32h743xx.s
@@ -963,8 +963,8 @@ TDPS_Project_PSC_elf_OBJECTS = \
 "CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" \
 "CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj" \
 "CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj" \
-"CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj" \
-"CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj" \
+"CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj" \
+"CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj" \
 "CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj"
 
 # External object files for target TDPS_Project_PSC.elf
@@ -1031,8 +1031,8 @@ TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.obj
-TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj
-TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj
+TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj
+TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/startup/startup_stm32h743xx.s.obj
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/build.make
 TDPS_Project_PSC.elf: CMakeFiles/TDPS_Project_PSC.elf.dir/link.txt

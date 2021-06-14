@@ -1789,59 +1789,59 @@ X-CUBE-AI/App/app_x-cube-ai.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/app_x-cube-ai.c.s
 .PHONY : X-CUBE-AI/App/app_x-cube-ai.c.s
 
-X-CUBE-AI/App/network.obj: X-CUBE-AI/App/network.c.obj
+X-CUBE-AI/App/tdps_network.obj: X-CUBE-AI/App/tdps_network.c.obj
 
-.PHONY : X-CUBE-AI/App/network.obj
-
-# target to build an object file
-X-CUBE-AI/App/network.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.obj
-.PHONY : X-CUBE-AI/App/network.c.obj
-
-X-CUBE-AI/App/network.i: X-CUBE-AI/App/network.c.i
-
-.PHONY : X-CUBE-AI/App/network.i
-
-# target to preprocess a source file
-X-CUBE-AI/App/network.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.i
-.PHONY : X-CUBE-AI/App/network.c.i
-
-X-CUBE-AI/App/network.s: X-CUBE-AI/App/network.c.s
-
-.PHONY : X-CUBE-AI/App/network.s
-
-# target to generate assembly for a file
-X-CUBE-AI/App/network.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network.c.s
-.PHONY : X-CUBE-AI/App/network.c.s
-
-X-CUBE-AI/App/network_data.obj: X-CUBE-AI/App/network_data.c.obj
-
-.PHONY : X-CUBE-AI/App/network_data.obj
+.PHONY : X-CUBE-AI/App/tdps_network.obj
 
 # target to build an object file
-X-CUBE-AI/App/network_data.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.obj
-.PHONY : X-CUBE-AI/App/network_data.c.obj
+X-CUBE-AI/App/tdps_network.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.obj
+.PHONY : X-CUBE-AI/App/tdps_network.c.obj
 
-X-CUBE-AI/App/network_data.i: X-CUBE-AI/App/network_data.c.i
+X-CUBE-AI/App/tdps_network.i: X-CUBE-AI/App/tdps_network.c.i
 
-.PHONY : X-CUBE-AI/App/network_data.i
+.PHONY : X-CUBE-AI/App/tdps_network.i
 
 # target to preprocess a source file
-X-CUBE-AI/App/network_data.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.i
-.PHONY : X-CUBE-AI/App/network_data.c.i
+X-CUBE-AI/App/tdps_network.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.i
+.PHONY : X-CUBE-AI/App/tdps_network.c.i
 
-X-CUBE-AI/App/network_data.s: X-CUBE-AI/App/network_data.c.s
+X-CUBE-AI/App/tdps_network.s: X-CUBE-AI/App/tdps_network.c.s
 
-.PHONY : X-CUBE-AI/App/network_data.s
+.PHONY : X-CUBE-AI/App/tdps_network.s
 
 # target to generate assembly for a file
-X-CUBE-AI/App/network_data.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/network_data.c.s
-.PHONY : X-CUBE-AI/App/network_data.c.s
+X-CUBE-AI/App/tdps_network.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network.c.s
+.PHONY : X-CUBE-AI/App/tdps_network.c.s
+
+X-CUBE-AI/App/tdps_network_data.obj: X-CUBE-AI/App/tdps_network_data.c.obj
+
+.PHONY : X-CUBE-AI/App/tdps_network_data.obj
+
+# target to build an object file
+X-CUBE-AI/App/tdps_network_data.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.obj
+.PHONY : X-CUBE-AI/App/tdps_network_data.c.obj
+
+X-CUBE-AI/App/tdps_network_data.i: X-CUBE-AI/App/tdps_network_data.c.i
+
+.PHONY : X-CUBE-AI/App/tdps_network_data.i
+
+# target to preprocess a source file
+X-CUBE-AI/App/tdps_network_data.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.i
+.PHONY : X-CUBE-AI/App/tdps_network_data.c.i
+
+X-CUBE-AI/App/tdps_network_data.s: X-CUBE-AI/App/tdps_network_data.c.s
+
+.PHONY : X-CUBE-AI/App/tdps_network_data.s
+
+# target to generate assembly for a file
+X-CUBE-AI/App/tdps_network_data.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/X-CUBE-AI/App/tdps_network_data.c.s
+.PHONY : X-CUBE-AI/App/tdps_network_data.c.s
 
 startup/startup_stm32h743xx.obj: startup/startup_stm32h743xx.s.obj
 
@@ -2044,12 +2044,12 @@ help:
 	@echo "... X-CUBE-AI/App/app_x-cube-ai.obj"
 	@echo "... X-CUBE-AI/App/app_x-cube-ai.i"
 	@echo "... X-CUBE-AI/App/app_x-cube-ai.s"
-	@echo "... X-CUBE-AI/App/network.obj"
-	@echo "... X-CUBE-AI/App/network.i"
-	@echo "... X-CUBE-AI/App/network.s"
-	@echo "... X-CUBE-AI/App/network_data.obj"
-	@echo "... X-CUBE-AI/App/network_data.i"
-	@echo "... X-CUBE-AI/App/network_data.s"
+	@echo "... X-CUBE-AI/App/tdps_network.obj"
+	@echo "... X-CUBE-AI/App/tdps_network.i"
+	@echo "... X-CUBE-AI/App/tdps_network.s"
+	@echo "... X-CUBE-AI/App/tdps_network_data.obj"
+	@echo "... X-CUBE-AI/App/tdps_network_data.i"
+	@echo "... X-CUBE-AI/App/tdps_network_data.s"
 	@echo "... startup/startup_stm32h743xx.obj"
 .PHONY : help
 

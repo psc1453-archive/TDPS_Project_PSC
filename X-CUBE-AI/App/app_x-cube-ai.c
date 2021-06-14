@@ -79,29 +79,29 @@
 /* USER CODE BEGIN includes */
 /* USER CODE END includes */
 /* Global AI objects */
-static ai_handle network = AI_HANDLE_NULL;
-static ai_network_report network_info;
+static ai_handle tdps_network = AI_HANDLE_NULL;
+static ai_network_report tdps_network_info;
 
 /* Global c-array to handle the activations buffer */
 AI_ALIGNED(4)
-static ai_u8 activations[AI_NETWORK_DATA_ACTIVATIONS_SIZE];
+static ai_u8 activations[AI_TDPS_NETWORK_DATA_ACTIVATIONS_SIZE];
 
 /*  In the case where "--allocate-inputs" option is used, memory buffer can be
  *  used from the activations buffer. This is not mandatory.
  */
-#if !defined(AI_NETWORK_INPUTS_IN_ACTIVATIONS)
+#if !defined(AI_TDPS_NETWORK_INPUTS_IN_ACTIVATIONS)
 /* Allocate data payload for input tensor */
-AI_ALIGNED(4)
-static ai_u8 in_data_s[AI_NETWORK_IN_1_SIZE_BYTES];
+AI_ALIGNED(32)
+static ai_float in_data_s[AI_TDPS_NETWORK_IN_1_SIZE];
 #endif
 
 /*  In the case where "--allocate-outputs" option is used, memory buffer can be
  *  used from the activations buffer. This is no mandatory.
  */
-#if !defined(AI_NETWORK_OUTPUTS_IN_ACTIVATIONS)
+#if !defined(AI_TDPS_NETWORK_OUTPUTS_IN_ACTIVATIONS)
 /* Allocate data payload for the output tensor */
-AI_ALIGNED(4)
-static ai_u8 out_data_s[AI_NETWORK_OUT_1_SIZE_BYTES];
+AI_ALIGNED(32)
+static ai_float out_data_s[AI_TDPS_NETWORK_OUT_1_SIZE];
 #endif
 
 static void ai_log_err(const ai_error err, const char *fct)
@@ -122,29 +122,29 @@ static int ai_boostrap(ai_handle w_addr, ai_handle act_addr)
   ai_error err;
 
   /* 1 - Create an instance of the model */
-  err = ai_network_create(&network, AI_NETWORK_DATA_CONFIG);
+  err = ai_tdps_network_create(&tdps_network, AI_TDPS_NETWORK_DATA_CONFIG);
   if (err.type != AI_ERROR_NONE) {
-    ai_log_err(err, "ai_network_create");
+    ai_log_err(err, "ai_tdps_network_create");
     return -1;
   }
 
   /* 2 - Initialize the instance */
   const ai_network_params params = {
-      AI_NETWORK_DATA_WEIGHTS(w_addr),
-      AI_NETWORK_DATA_ACTIVATIONS(act_addr) };
+      AI_TDPS_NETWORK_DATA_WEIGHTS(w_addr),
+      AI_TDPS_NETWORK_DATA_ACTIVATIONS(act_addr) };
 
-  if (!ai_network_init(network, &params)) {
-      err = ai_network_get_error(network);
-      ai_log_err(err, "ai_network_init");
+  if (!ai_tdps_network_init(tdps_network, &params)) {
+      err = ai_tdps_network_get_error(tdps_network);
+      ai_log_err(err, "ai_tdps_network_init");
       return -1;
     }
 
   /* 3 - Retrieve the network info of the created instance */
-  if (!ai_network_get_info(network, &network_info)) {
-    err = ai_network_get_error(network);
-    ai_log_err(err, "ai_network_get_error");
-    ai_network_destroy(network);
-    network = AI_HANDLE_NULL;
+  if (!ai_tdps_network_get_info(tdps_network, &tdps_network_info)) {
+    err = ai_tdps_network_get_error(tdps_network);
+    ai_log_err(err, "ai_tdps_network_get_error");
+    ai_tdps_network_destroy(tdps_network);
+    tdps_network = AI_HANDLE_NULL;
     return -3;
   }
 
@@ -155,16 +155,16 @@ static int ai_run(void *data_in, void *data_out)
 {
   ai_i32 batch;
 
-  ai_buffer *ai_input = network_info.inputs;
-  ai_buffer *ai_output = network_info.outputs;
+  ai_buffer *ai_input = tdps_network_info.inputs;
+  ai_buffer *ai_output = tdps_network_info.outputs;
 
   ai_input[0].data = AI_HANDLE_PTR(data_in);
   ai_output[0].data = AI_HANDLE_PTR(data_out);
 
-  batch = ai_network_run(network, ai_input, ai_output);
+  batch = ai_tdps_network_run(tdps_network, ai_input, ai_output);
   if (batch != 1) {
-    ai_log_err(ai_network_get_error(network),
-        "ai_network_run");
+    ai_log_err(ai_tdps_network_get_error(tdps_network),
+        "ai_tdps_network_run");
     return -1;
   }
 
@@ -191,7 +191,7 @@ void MX_X_CUBE_AI_Init(void)
     /* USER CODE BEGIN 5 */
   printf("\r\nTEMPLATE - initialization\r\n");
 
-  ai_boostrap(ai_network_data_weights_get(), activations);
+  ai_boostrap(ai_tdps_network_data_weights_get(), activations);
     /* USER CODE END 5 */
 }
 
@@ -204,9 +204,9 @@ void MX_X_CUBE_AI_Process(void)
 
   printf("TEMPLATE - run - main loop\r\n");
 
-  if (network) {
+  if (tdps_network) {
 
-    if ((network_info.n_inputs != 1) || (network_info.n_outputs != 1)) {
+    if ((tdps_network_info.n_inputs != 1) || (tdps_network_info.n_outputs != 1)) {
       ai_error err = {AI_ERROR_INVALID_PARAM, AI_ERROR_CODE_OUT_OF_RANGE};
       ai_log_err(err, "template code should be updated\r\n to support a model with multiple IO");
       return;
