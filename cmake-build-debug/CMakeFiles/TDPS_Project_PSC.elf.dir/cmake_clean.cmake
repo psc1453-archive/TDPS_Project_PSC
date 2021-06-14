@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/DS1302.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/HCSR04.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.obj"
+  "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/PID.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/crc.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/dcmi.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/delay.c.obj"

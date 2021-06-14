@@ -250,6 +250,33 @@ Core/Src/JY901S.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/JY901S.c.s
 .PHONY : Core/Src/JY901S.c.s
 
+Core/Src/PID.obj: Core/Src/PID.c.obj
+
+.PHONY : Core/Src/PID.obj
+
+# target to build an object file
+Core/Src/PID.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/PID.c.obj
+.PHONY : Core/Src/PID.c.obj
+
+Core/Src/PID.i: Core/Src/PID.c.i
+
+.PHONY : Core/Src/PID.i
+
+# target to preprocess a source file
+Core/Src/PID.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/PID.c.i
+.PHONY : Core/Src/PID.c.i
+
+Core/Src/PID.s: Core/Src/PID.c.s
+
+.PHONY : Core/Src/PID.s
+
+# target to generate assembly for a file
+Core/Src/PID.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/PID.c.s
+.PHONY : Core/Src/PID.c.s
+
 Core/Src/crc.obj: Core/Src/crc.c.obj
 
 .PHONY : Core/Src/crc.obj
@@ -1900,6 +1927,9 @@ help:
 	@echo "... Core/Src/JY901S.obj"
 	@echo "... Core/Src/JY901S.i"
 	@echo "... Core/Src/JY901S.s"
+	@echo "... Core/Src/PID.obj"
+	@echo "... Core/Src/PID.i"
+	@echo "... Core/Src/PID.s"
 	@echo "... Core/Src/crc.obj"
 	@echo "... Core/Src/crc.i"
 	@echo "... Core/Src/crc.s"
