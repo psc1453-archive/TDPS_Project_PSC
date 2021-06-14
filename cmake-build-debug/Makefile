@@ -466,6 +466,33 @@ Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
 
+Core/Src/motor.obj: Core/Src/motor.c.obj
+
+.PHONY : Core/Src/motor.obj
+
+# target to build an object file
+Core/Src/motor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/motor.c.obj
+.PHONY : Core/Src/motor.c.obj
+
+Core/Src/motor.i: Core/Src/motor.c.i
+
+.PHONY : Core/Src/motor.i
+
+# target to preprocess a source file
+Core/Src/motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/motor.c.i
+.PHONY : Core/Src/motor.c.i
+
+Core/Src/motor.s: Core/Src/motor.c.s
+
+.PHONY : Core/Src/motor.s
+
+# target to generate assembly for a file
+Core/Src/motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/motor.c.s
+.PHONY : Core/Src/motor.c.s
+
 Core/Src/spi.obj: Core/Src/spi.c.obj
 
 .PHONY : Core/Src/spi.obj
@@ -1897,6 +1924,9 @@ help:
 	@echo "... Core/Src/main.obj"
 	@echo "... Core/Src/main.i"
 	@echo "... Core/Src/main.s"
+	@echo "... Core/Src/motor.obj"
+	@echo "... Core/Src/motor.i"
+	@echo "... Core/Src/motor.s"
 	@echo "... Core/Src/spi.obj"
 	@echo "... Core/Src/spi.i"
 	@echo "... Core/Src/spi.s"

@@ -4,7 +4,7 @@
   * @file           : main.c
   * @brief          : Main program body
   ******************************************************************************
-  * @attention
+  * @attention89
   *
   * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
@@ -38,6 +38,7 @@
 #include "DS1302.h"
 #include "HCSR04.h"
 #include "JY901S.h"
+#include "motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,6 +58,14 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+const Motor_Pair_Connector motor_pair_connector = {
+        MOTOR_L_F_GPIO_Port, MOTOR_L_F_Pin,
+        MOTOR_L_B_GPIO_Port, MOTOR_L_B_Pin,
+        MOTOR_R_F_GPIO_Port, MOTOR_R_F_Pin,
+        MOTOR_R_B_GPIO_Port, MOTOR_R_B_Pin,
+};
+
+Motor_Pair motor_pair;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -123,15 +132,21 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM16_Init();
   MX_USART1_UART_Init();
+  MX_TIM4_Init();
+  MX_TIM3_Init();
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
+    Motor_Init(&motor_pair, motor_pair_connector, &htim4, &htim3, TIM_CHANNEL_1, TIM_CHANNEL_2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
+      Motor_Smart_PWM_Left_Duty_Cycle(&motor_pair, 1);
+      Motor_Smart_PWM_Right_Duty_Cycle(&motor_pair, -1);
+
+      /* USER CODE END WHILE */
 
 //  MX_X_CUBE_AI_Process();
     /* USER CODE BEGIN 3 */

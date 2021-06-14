@@ -58,6 +58,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define MOTOR_R_F_Pin GPIO_PIN_2
+#define MOTOR_R_F_GPIO_Port GPIOE
 #define LED_Pin GPIO_PIN_3
 #define LED_GPIO_Port GPIOE
 #define KEY_Pin GPIO_PIN_13
@@ -111,12 +113,22 @@ void Error_Handler(void);
 #define DISTANCE_RIGHT_ECHO_EXTI_IRQn EXTI9_5_IRQn
 #define DISTANCE_RIGHT_TRIG_Pin GPIO_PIN_9
 #define DISTANCE_RIGHT_TRIG_GPIO_Port GPIOC
+#define MOTOR_L_B_Pin GPIO_PIN_10
+#define MOTOR_L_B_GPIO_Port GPIOC
+#define MOTOR_L_F_Pin GPIO_PIN_11
+#define MOTOR_L_F_GPIO_Port GPIOC
 #define CLOCK_RST_Pin GPIO_PIN_0
 #define CLOCK_RST_GPIO_Port GPIOD
+#define MOTOR_R_B_Pin GPIO_PIN_1
+#define MOTOR_R_B_GPIO_Port GPIOD
 #define CLOCK_DAT_Pin GPIO_PIN_2
 #define CLOCK_DAT_GPIO_Port GPIOD
 #define CLOCK_CLK_Pin GPIO_PIN_4
 #define CLOCK_CLK_GPIO_Port GPIOD
+#define MOTOR_PWM_R_Pin GPIO_PIN_5
+#define MOTOR_PWM_R_GPIO_Port GPIOB
+#define MOTOR_PWM_L_Pin GPIO_PIN_6
+#define MOTOR_PWM_L_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

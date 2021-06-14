@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj"
+  "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/motor.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
   "CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj"

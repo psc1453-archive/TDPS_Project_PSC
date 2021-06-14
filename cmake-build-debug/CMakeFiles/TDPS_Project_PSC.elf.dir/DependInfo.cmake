@@ -44,6 +44,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/i2c.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/i2c.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/lptim.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/lptim.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/main.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj"
+  "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/motor.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/motor.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/spi.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/spi.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/stm32h7xx_hal_msp.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
   "/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/stm32h7xx_it.c" "/Users/psc/CLionProjects/TDPS_Project_PSC/cmake-build-debug/CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj"
