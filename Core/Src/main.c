@@ -66,6 +66,20 @@ const Motor_Pair_Connector motor_pair_connector = {
 };
 
 Motor_Pair motor_pair;
+
+HCSR04_Connector hcsr04_connector_front = {
+        DISTANCE_FRONT_TRIG_GPIO_Port, DISTANCE_FRONT_TRIG_Pin,
+        DISTANCE_FRONT_ECHO_GPIO_Port, DISTANCE_FRONT_ECHO_Pin
+};
+
+HCSR04 hcsr04_front;
+
+HCSR04_Connector hcsr04_connector_left = {
+        DISTANCE_LEFT_TRIG_GPIO_Port, DISTANCE_LEFT_TRIG_Pin,
+        DISTANCE_LEFT_ECHO_GPIO_Port, DISTANCE_LEFT_ECHO_Pin
+};
+
+HCSR04 hcsr04_left;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -137,14 +151,19 @@ int main(void)
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
     Motor_Init(&motor_pair, motor_pair_connector, &htim4, &htim3, TIM_CHANNEL_1, TIM_CHANNEL_2);
-  /* USER CODE END 2 */
+    HCSR04_Init(&hcsr04_front, hcsr04_connector_front, &hlptim1, 2);
+    HCSR04_Init(&hcsr04_left, hcsr04_connector_left, &hlptim2, 2);
+
+    /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      Motor_Smart_PWM_Left_Duty_Cycle(&motor_pair, 1);
-      Motor_Smart_PWM_Right_Duty_Cycle(&motor_pair, -1);
+      HCSR04_Trig(&hcsr04_front);
+      HCSR04_Trig(&hcsr04_left);
+      printf("%f   %f\r\n", hcsr04_front.distance, hcsr04_left.distance);
+      HAL_Delay(100);
 
       /* USER CODE END WHILE */
 

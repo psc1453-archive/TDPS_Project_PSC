@@ -66,7 +66,8 @@ extern LPTIM_HandleTypeDef hlptim3;
 extern LPTIM_HandleTypeDef hlptim4;
 extern UART_HandleTypeDef huart5;
 /* USER CODE BEGIN EV */
-
+extern HCSR04 hcsr04_front;
+extern HCSR04 hcsr04_left;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -363,6 +364,29 @@ void LPTIM4_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
+void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
+{
+    if(hlptim == hcsr04_front.hlptim)
+    {
+        HCSR04_Auto_Reload_Handler(&hcsr04_front);
+    }
+    else if(hlptim == hcsr04_left.hlptim)
+    {
+        HCSR04_Auto_Reload_Handler(&hcsr04_left);
+    }
 
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if(GPIO_Pin == hcsr04_front.connector.HCSR04_ECHO_Pin)
+    {
+        HCSR04_EXTI_Handler(&hcsr04_front);
+    }
+    else if(GPIO_Pin == hcsr04_left.connector.HCSR04_ECHO_Pin)
+    {
+        HCSR04_EXTI_Handler(&hcsr04_left);
+    }
+}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
