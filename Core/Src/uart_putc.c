@@ -11,11 +11,11 @@
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
 #endif
 
-extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart3;
 
 PUTCHAR_PROTOTYPE
 {
-    HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 50);
+    HAL_UART_Transmit(&huart3, (uint8_t *)&ch, 1, 50);
 
     return ch;
 }
