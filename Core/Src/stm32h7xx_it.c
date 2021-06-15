@@ -64,6 +64,7 @@ extern LPTIM_HandleTypeDef hlptim1;
 extern LPTIM_HandleTypeDef hlptim2;
 extern LPTIM_HandleTypeDef hlptim3;
 extern LPTIM_HandleTypeDef hlptim4;
+extern LPTIM_HandleTypeDef hlptim5;
 extern UART_HandleTypeDef huart5;
 /* USER CODE BEGIN EV */
 extern HCSR04 hcsr04_front;
@@ -364,7 +365,31 @@ void LPTIM4_IRQHandler(void)
   /* USER CODE END LPTIM4_IRQn 1 */
 }
 
+/**
+  * @brief This function handles LPTIM5 global interrupt.
+  */
+void LPTIM5_IRQHandler(void)
+{
+  /* USER CODE BEGIN LPTIM5_IRQn 0 */
+
+  /* USER CODE END LPTIM5_IRQn 0 */
+  HAL_LPTIM_IRQHandler(&hlptim5);
+  /* USER CODE BEGIN LPTIM5_IRQn 1 */
+
+  /* USER CODE END LPTIM5_IRQn 1 */
+}
+
 /* USER CODE BEGIN 1 */
+void HAL_LPTIM_CompareMatchCallback(LPTIM_HandleTypeDef *hlptim)
+{
+    if(hlptim == &hlptim1)
+    {
+        HCSR04_Trig_Compare_Handler(&hcsr04_front);
+        HCSR04_Trig_Compare_Handler(&hcsr04_left);
+
+    }
+}
+
 void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
 {
     if(hlptim == hcsr04_front.hlptim)
@@ -375,7 +400,11 @@ void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
     {
         HCSR04_Auto_Reload_Handler(&hcsr04_left);
     }
-
+    else if(hlptim == &hlptim1)
+    {
+        HCSR04_Trig_Reload_Handler(&hcsr04_front);
+        HCSR04_Trig_Reload_Handler(&hcsr04_left);
+    }
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)

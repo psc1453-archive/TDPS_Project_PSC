@@ -31,10 +31,15 @@ typedef struct
 
 void HCSR04_Init(HCSR04* hcsr04, HCSR04_Connector connector, LPTIM_HandleTypeDef* hlptim, int lptim_mhz);
 void HCSR04_Trig(HCSR04* hcsr04);
+void HCSR04_Background_INT_Trigger(LPTIM_HandleTypeDef* trigger_lptim);
 
 // Put into void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
 void HCSR04_Auto_Reload_Handler(HCSR04* hcsr04);
 // Put into void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 void HCSR04_EXTI_Handler(HCSR04* hcsr04);
+// Put into void HAL_LPTIM_CompareMatchCallback(LPTIM_HandleTypeDef *hlptim), every sensor one call
+void HCSR04_Trig_Compare_Handler(HCSR04* hcsr04);
+// Put into void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim), every sensor one call
+void HCSR04_Trig_Reload_Handler(HCSR04* hcsr04);
 
 #endif //TDPS_PROJECT_PSC_HCSR04_H

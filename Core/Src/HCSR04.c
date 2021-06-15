@@ -23,6 +23,11 @@ void HCSR04_Trig(HCSR04* hcsr04)
     HAL_GPIO_WritePin(hcsr04->connector.HCSR04_TRIG_Port, hcsr04->connector.HCSR04_TRIG_Pin, GPIO_PIN_RESET);
 }
 
+void HCSR04_Background_INT_Trigger(LPTIM_HandleTypeDef* trigger_lptim)
+{
+    HAL_LPTIM_PWM_Start_IT(trigger_lptim, 3200-1, 1-1);
+}
+
 // Put into void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
 void HCSR04_Auto_Reload_Handler(HCSR04* hcsr04)
 {
@@ -44,6 +49,16 @@ void HCSR04_EXTI_Handler(HCSR04* hcsr04)
         HAL_LPTIM_Counter_Stop_IT(hcsr04->hlptim);
         hcsr04->distance = (hcsr04->echo_time.time_ms * 1000.0 + hcsr04->echo_time.time_us) * 0.017;
     }
+}
+
+void HCSR04_Trig_Compare_Handler(HCSR04* hcsr04)
+{
+    HAL_GPIO_WritePin(hcsr04->connector.HCSR04_TRIG_Port, hcsr04->connector.HCSR04_TRIG_Pin, GPIO_PIN_RESET);
+}
+
+void HCSR04_Trig_Reload_Handler(HCSR04* hcsr04)
+{
+    HAL_GPIO_WritePin(hcsr04->connector.HCSR04_TRIG_Port, hcsr04->connector.HCSR04_TRIG_Pin, GPIO_PIN_SET);
 }
 
 

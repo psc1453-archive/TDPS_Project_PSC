@@ -67,6 +67,7 @@ void LPTIM1_IRQHandler(void);
 void LPTIM2_IRQHandler(void);
 void LPTIM3_IRQHandler(void);
 void LPTIM4_IRQHandler(void);
+void LPTIM5_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */

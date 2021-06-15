@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    tdps_network_data.h
   * @author  AST Embedded Analytics Research Platform
-  * @date    Mon Jun 14 13:19:19 2021
+  * @date    Tue Jun 15 10:13:58 2021
   * @brief   AI Tool Automatic Code Generator for Embedded NN computing
   ******************************************************************************
   * @attention
