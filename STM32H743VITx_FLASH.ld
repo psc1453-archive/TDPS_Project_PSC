@@ -188,6 +188,11 @@ SECTIONS
   }
 
   .ARM.attributes 0 : { *(.ARM.attributes) }
+
+  .buffers : {
+          . = ALIGN(4);
+          *(.buffers*)
+      } > RAM_D1
 }
 
 
