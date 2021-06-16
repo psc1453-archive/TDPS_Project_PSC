@@ -39,6 +39,8 @@
 #include "HCSR04.h"
 #include "JY901S.h"
 #include "motor.h"
+#include "control.h"
+#include "patio1.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,6 +50,17 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define ANGLE_P_DATA 0.006
+#define ANGLE_I_DATA 0.0000
+#define ANGLE_D_DATA 0.000
+
+//#define ANGLE_P_DATA 0.006
+//#define ANGLE_I_DATA 0.00000
+//#define ANGLE_D_DATA 0.000
+
+#define DISTANCE_P_DATA 0.005
+#define DISTANCE_I_DATA 0.000
+#define DISTANCE_D_DATA 0.000
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -58,7 +71,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-const Motor_Pair_Connector motor_pair_connector = {
+Motor_Pair_Connector motor_pair_connector = {
         MOTOR_L_F_GPIO_Port, MOTOR_L_F_Pin,
         MOTOR_L_B_GPIO_Port, MOTOR_L_B_Pin,
         MOTOR_R_F_GPIO_Port, MOTOR_R_F_Pin,
@@ -84,6 +97,9 @@ HCSR04 hcsr04_left;
 AngleFilterQueue angle_filter_queue = {{0}, 0, 0};
 
 JY901S jy901s;
+
+PID_Controller angle_pid_controller;
+PID_Controller distance_pid_controller;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -150,12 +166,11 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM16_Init();
   MX_USART1_UART_Init();
-  MX_TIM4_Init();
   MX_TIM3_Init();
   MX_LPTIM5_Init();
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
-    Motor_Init(&motor_pair, motor_pair_connector, &htim4, &htim3, TIM_CHANNEL_1, TIM_CHANNEL_2);
+    Motor_Init(&motor_pair, motor_pair_connector, &htim3, &htim3, TIM_CHANNEL_2, TIM_CHANNEL_3);
 
     HCSR04_Init(&hcsr04_front, hcsr04_connector_front, &hlptim2, 2);
     HCSR04_Init(&hcsr04_left, hcsr04_connector_left, &hlptim3, 2);
@@ -163,18 +178,50 @@ int main(void)
 
     JY901S_Init(&jy901s, &huart5, &angle_filter_queue);
 
+//    HAL_Delay(3000);
+    PID_Init(&angle_pid_controller, 0, ANGLE_P_DATA, ANGLE_I_DATA, ANGLE_D_DATA);
+    PID_Init(&distance_pid_controller, 60, DISTANCE_P_DATA, DISTANCE_I_DATA, DISTANCE_D_DATA);
+    TCS34725 color_sensor;
+    COLOR_RGBC_RAW raw_buffer;
+    COLOR_CMYK cmyk_buffer;
+    COLOR_HSL hsl_buffer;
+    TCS34725_Init(&color_sensor, &hi2c2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+    HAL_Delay(3000);
+    Patio1();
+    while (1)
   {
-//      HCSR04_Trig(&hcsr04_front);
-//      HCSR04_Trig(&hcsr04_left);
-      printf("%f   %f\r\n", hcsr04_front.distance, hcsr04_left.distance);
-      printf("%f\r\n", AngleGetLatestMean(&jy901s));
-//      HAL_Delay(50);
+//      TCS34725_GetRawData(&color_sensor, &raw_buffer);
+//      TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
+//      TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
+//      printf(cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? "yellow\r\n" : "red\r\n") : (cmyk_buffer.c < cmyk_buffer.y ? "yellow\r\n" : "blue\r\n"));
+//      printf("%d\r\n", hsl_buffer.s);
 
+//      Keep_Distance_Forward(&motor_pair, &hcsr04_left, &jy901s, &distance_pid_controller, 0.3, -30);
+//      printf("%f   %f    %f\r\n", hcsr04_front.distance, hcsr04_left.distance, AngleGetLatestMean(&jy901s));
+//      printf("Angle_mean: %f\r\n", AngleGetLatestMean(&jy901s));
+//      printf("%f\r\n", RegulateAngle(126.25- AngleGetLatestMean(&jy901s)));
+//if(!start_strait)
+//{
+//    start_distance = hcsr04_left.distance;
+//    start_angle = AngleGetLatest(&jy901s);
+//    start_strait = 1;
+//    PID_Init(&distance_pid_controller, start_distance, DISTANCE_P_DATA, DISTANCE_I_DATA, DISTANCE_D_DATA);
+//}
+//      TurnTo(&jy901s, &motor_pair, 126.25, 0.25, 2000);
+////      HAL_Delay(3000);
+//      while (1)
+//      {
+//          Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.3, 126.25);
+//
+//      }
+//      Motor_Stop(&motor_pair);
+//      return 0;
+
+//      Keep_Distance_Forward(&motor_pair, &hcsr04_left, &jy901s, &distance_pid_controller, 0.3, start_angle);
     /* USER CODE END WHILE */
 
 //  MX_X_CUBE_AI_Process();
