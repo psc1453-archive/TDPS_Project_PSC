@@ -197,7 +197,7 @@ void Patio1()
     // Drive across Gate
     while(!(hcsr04_left.distance < 20.0 && hcsr04_left.distance > 0.5))
     {
-        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, GATE_TARGET_ANGLE);
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.3, GATE_TARGET_ANGLE);
     }
     HAL_Delay(2000);
     Motor_Stop(&motor_pair);
