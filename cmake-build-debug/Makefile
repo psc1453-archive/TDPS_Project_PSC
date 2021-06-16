@@ -547,6 +547,60 @@ Core/Src/motor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/motor.c.s
 .PHONY : Core/Src/motor.c.s
 
+Core/Src/patio1.obj: Core/Src/patio1.c.obj
+
+.PHONY : Core/Src/patio1.obj
+
+# target to build an object file
+Core/Src/patio1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/patio1.c.obj
+.PHONY : Core/Src/patio1.c.obj
+
+Core/Src/patio1.i: Core/Src/patio1.c.i
+
+.PHONY : Core/Src/patio1.i
+
+# target to preprocess a source file
+Core/Src/patio1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/patio1.c.i
+.PHONY : Core/Src/patio1.c.i
+
+Core/Src/patio1.s: Core/Src/patio1.c.s
+
+.PHONY : Core/Src/patio1.s
+
+# target to generate assembly for a file
+Core/Src/patio1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/patio1.c.s
+.PHONY : Core/Src/patio1.c.s
+
+Core/Src/patio2.obj: Core/Src/patio2.c.obj
+
+.PHONY : Core/Src/patio2.obj
+
+# target to build an object file
+Core/Src/patio2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/patio2.c.obj
+.PHONY : Core/Src/patio2.c.obj
+
+Core/Src/patio2.i: Core/Src/patio2.c.i
+
+.PHONY : Core/Src/patio2.i
+
+# target to preprocess a source file
+Core/Src/patio2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/patio2.c.i
+.PHONY : Core/Src/patio2.c.i
+
+Core/Src/patio2.s: Core/Src/patio2.c.s
+
+.PHONY : Core/Src/patio2.s
+
+# target to generate assembly for a file
+Core/Src/patio2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TDPS_Project_PSC.elf.dir/build.make CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/patio2.c.s
+.PHONY : Core/Src/patio2.c.s
+
 Core/Src/spi.obj: Core/Src/spi.c.obj
 
 .PHONY : Core/Src/spi.obj
@@ -1987,6 +2041,12 @@ help:
 	@echo "... Core/Src/motor.obj"
 	@echo "... Core/Src/motor.i"
 	@echo "... Core/Src/motor.s"
+	@echo "... Core/Src/patio1.obj"
+	@echo "... Core/Src/patio1.i"
+	@echo "... Core/Src/patio1.s"
+	@echo "... Core/Src/patio2.obj"
+	@echo "... Core/Src/patio2.i"
+	@echo "... Core/Src/patio2.s"
 	@echo "... Core/Src/spi.obj"
 	@echo "... Core/Src/spi.i"
 	@echo "... Core/Src/spi.s"

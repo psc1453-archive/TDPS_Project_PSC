@@ -161,6 +161,12 @@
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/motor.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/patio1.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/patio2.h">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Inc/spi.h">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
@@ -219,6 +225,12 @@
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/motor.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/patio1.c">
+			<Option target="TDPS_Project_PSC.elf"/>
+		</Unit>
+		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/patio2.c">
 			<Option target="TDPS_Project_PSC.elf"/>
 		</Unit>
 		<Unit filename="/Users/psc/CLionProjects/TDPS_Project_PSC/Core/Src/spi.c">
