@@ -235,8 +235,8 @@ void MX_X_CUBE_AI_Process(void)
 {
     /* USER CODE BEGIN 6 */
   int res = -1;
-  uint8_t *in_data = NULL;
-  uint8_t *out_data = NULL;
+  ai_float *in_data = NULL;
+  ai_float *out_data = NULL;
 
   printf("TEMPLATE - run - main loop\r\n");
 

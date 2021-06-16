@@ -30,7 +30,7 @@ int isOnColor()
     TCS34725_GetRawData(&color_sensor, &raw_buffer);
     TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
     TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
-    color = cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? 2 : 1) : (cmyk_buffer.c < cmyk_buffer.y ? 2 : 0;
+    color = cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? 2 : 1) : (cmyk_buffer.c < cmyk_buffer.y ? 2 : 0);
     if(color == 1)
     {
         return 1;

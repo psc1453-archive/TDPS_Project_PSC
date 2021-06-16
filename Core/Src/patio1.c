@@ -63,7 +63,7 @@ static void Left_Backward()
     HAL_GPIO_WritePin(MOTOR_L_B_GPIO_Port, MOTOR_L_B_Pin, GPIO_PIN_SET);
 }
 
-static oid Right_Forward()
+static void Right_Forward()
 {
     HAL_GPIO_WritePin(MOTOR_R_F_GPIO_Port, MOTOR_R_F_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(MOTOR_R_B_GPIO_Port, MOTOR_R_B_Pin, GPIO_PIN_RESET);
