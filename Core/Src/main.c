@@ -41,6 +41,7 @@
 #include "motor.h"
 #include "control.h"
 #include "patio1.h"
+#include "patio2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,6 +101,11 @@ JY901S jy901s;
 
 PID_Controller angle_pid_controller;
 PID_Controller distance_pid_controller;
+
+TCS34725 color_sensor;
+COLOR_RGBC_RAW raw_buffer;
+COLOR_CMYK cmyk_buffer;
+COLOR_HSL hsl_buffer;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -181,19 +187,17 @@ int main(void)
 //    HAL_Delay(3000);
     PID_Init(&angle_pid_controller, 0, ANGLE_P_DATA, ANGLE_I_DATA, ANGLE_D_DATA);
     PID_Init(&distance_pid_controller, 60, DISTANCE_P_DATA, DISTANCE_I_DATA, DISTANCE_D_DATA);
-    TCS34725 color_sensor;
-    COLOR_RGBC_RAW raw_buffer;
-    COLOR_CMYK cmyk_buffer;
-    COLOR_HSL hsl_buffer;
+
     TCS34725_Init(&color_sensor, &hi2c2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
     HAL_Delay(3000);
-    Patio1();
+    Patio2();
     while (1)
   {
+
 //      TCS34725_GetRawData(&color_sensor, &raw_buffer);
 //      TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
 //      TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
@@ -201,7 +205,7 @@ int main(void)
 //      printf("%d\r\n", hsl_buffer.s);
 
 //      Keep_Distance_Forward(&motor_pair, &hcsr04_left, &jy901s, &distance_pid_controller, 0.3, -30);
-//      printf("%f   %f    %f\r\n", hcsr04_front.distance, hcsr04_left.distance, AngleGetLatestMean(&jy901s));
+      printf("%f   %f    %f\r\n", hcsr04_front.distance, hcsr04_left.distance, AngleGetLatestMean(&jy901s));
 //      printf("Angle_mean: %f\r\n", AngleGetLatestMean(&jy901s));
 //      printf("%f\r\n", RegulateAngle(126.25- AngleGetLatestMean(&jy901s)));
 //if(!start_strait)
