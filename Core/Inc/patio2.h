@@ -6,5 +6,6 @@
 #define TDPS_PROJECT_PSC_PATIO2_H
 
 void Patio2();
+int isOnColor();
 
 #endif //TDPS_PROJECT_PSC_PATIO2_H

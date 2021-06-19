@@ -225,7 +225,7 @@ int post_process(ai_float * data)
 void MX_X_CUBE_AI_Init(void)
 {
     /* USER CODE BEGIN 5 */
-  printf("\r\nTEMPLATE - initialization\r\n");
+//  printf("\r\nTEMPLATE - initialization\r\n");
 
   ai_boostrap(ai_tdps_network_data_weights_get(), activations);
     /* USER CODE END 5 */

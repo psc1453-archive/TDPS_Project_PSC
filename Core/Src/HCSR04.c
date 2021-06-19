@@ -25,7 +25,7 @@ void HCSR04_Trig(HCSR04* hcsr04)
 
 void HCSR04_Background_INT_Trigger(LPTIM_HandleTypeDef* trigger_lptim)
 {
-    HAL_LPTIM_PWM_Start_IT(trigger_lptim, 3200-1, 1-1);
+    HAL_LPTIM_PWM_Start_IT(trigger_lptim, 6400-1, 1-1);
 }
 
 // Put into void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)

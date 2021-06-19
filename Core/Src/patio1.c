@@ -142,8 +142,9 @@ void Patio1()
     Camera_Init_Device(&hi2c1, FRAMESIZE_TDPS_NN_54P, PIXFORMAT_YUV422);
     ST7735_LCD_Driver.FillRect(&st7735_pObj, 0, 58, ST7735Ctx.Width, 16, BLACK);
     // Path finding
-    while(!(hcsr04_front.distance < 40.0 && hcsr04_front.distance > 0.5))
-    {
+//    while(!(hcsr04_front.distance < 30.0 && hcsr04_front.distance > 0.5))
+while(1)
+{
         if(DMA_Started)
         {
 
@@ -184,20 +185,26 @@ void Patio1()
         }
     }
     HAL_DCMI_Stop(&hdcmi);
+    while(hcsr04_front.distance > 30.0)
+    {
+        Motor_Straight(&motor_pair, 0.3);
+    }
     Motor_Stop(&motor_pair);
     // Turn to bridge
-    TurnTo(&jy901s, &motor_pair, BRIDGE_TARGET_ANGLE, 0.25, 2000, 10);
+    TurnTo(&jy901s, &motor_pair, -90, 0.3, 2000, 5);
     // Cross bridge
-    while (!(hcsr04_front.distance < 40.0 && hcsr04_front.distance > 0.5))
+    while (hcsr04_front.distance > 40.0)
+//    while(1)
     {
-        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, BRIDGE_TARGET_ANGLE);
+//        Motor_Straight(&motor_pair, 1);
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.6, -90);
     }
     // Turn to gate
-    TurnTo(&jy901s, &motor_pair, GATE_TARGET_ANGLE, 0.25, 2000, 10);
+    TurnTo(&jy901s, &motor_pair, 0, 0.3, 2000, 5);
     // Drive across Gate
-    while(!(hcsr04_left.distance < 20.0 && hcsr04_left.distance > 0.5))
+    while(!(hcsr04_left.distance < 30.0 && hcsr04_left.distance > 0.5))
     {
-        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.3, GATE_TARGET_ANGLE);
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
     }
     HAL_Delay(2000);
     Motor_Stop(&motor_pair);

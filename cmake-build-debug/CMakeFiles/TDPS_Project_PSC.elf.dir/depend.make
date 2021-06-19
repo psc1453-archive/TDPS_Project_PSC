@@ -580,6 +580,7 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/lptim.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/main.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/motor.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/patio1.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/patio2.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/spi.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/stm32h7xx_hal_conf.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/main.c.obj: ../Core/Inc/tim.h

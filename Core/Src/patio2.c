@@ -27,17 +27,88 @@ int color = 0;
 
 int isOnColor()
 {
+
+    static color_last = 0;
+    static int compare_cnt = 0;
     TCS34725_GetRawData(&color_sensor, &raw_buffer);
     TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
     TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
-    color = cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? 2 : 1) : (cmyk_buffer.c < cmyk_buffer.y ? 2 : 0);
+    printf(cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? "yellow\r\n" : "red\r\n") : (cmyk_buffer.c < cmyk_buffer.y ? "yellow\r\n" : "blue\r\n"));
+      printf("%d\r\n", hsl_buffer.s);
+    color = cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? 3 : 2) : (cmyk_buffer.c < cmyk_buffer.y ? 3 : 1);
     if(color == 1)
     {
-        return 1;
+        if(hsl_buffer.s > 35)
+        {
+            if(color_last == color)
+            {
+                color_last = color;
+                compare_cnt++;
+            }
+            else
+            {
+                color_last = 0;
+                compare_cnt = 0;
+            }
+
+        }
+        else
+        {
+            color_last = 0;
+            compare_cnt = 0;
+        }
+    }
+    else if(color == 2)
+    {
+        if(hsl_buffer.s > 10)
+        {
+            if(color_last == color)
+            {
+                color_last = color;
+                compare_cnt++;
+            }
+            else
+            {
+                color_last = 0;
+                compare_cnt = 0;
+            }
+        }
+        else
+        {
+            color_last = 0;
+            compare_cnt = 0;
+        }
     }
     else
     {
-        return hsl_buffer.s > 35 ? 1 : 0;
+        if(hsl_buffer.s > 35)
+        {
+            if(color_last == color)
+            {
+                color_last = color;
+                compare_cnt++;
+            }
+            else
+            {
+                color_last = 0;
+                compare_cnt = 0;
+            }
+        }
+        else
+        {
+            color_last = 0;
+            compare_cnt = 0;
+        }
+    }
+    color_last = color;
+    printf("%d %d %d\r\n", color_last, color, compare_cnt);
+    if(compare_cnt > 30)
+    {
+        return color_last;
+    }
+    else
+    {
+        return 0;
     }
 }
 
@@ -64,12 +135,13 @@ void Patio2()
         default:
             break;
     }
-    HAL_Delay(5000);
+    HAL_Delay(1000);
+    TurnTo(&jy901s, &motor_pair, FORWARD_TARGET_ANGLE, 0.25, 2000, 1);
     while(!(hcsr04_front.distance < 40.0 && hcsr04_front.distance > 0.5))
     {
         Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.3, FORWARD_TARGET_ANGLE);
     }
-    TurnTo(&jy901s, &motor_pair, LAKE_TARGET_ANGLE, 0.25, 2000, 10);
+    TurnTo(&jy901s, &motor_pair, LAKE_TARGET_ANGLE, 0.25, 2000, 1);
     while(hcsr04_left.distance < 200)
     {
         Keep_Distance_Forward(&motor_pair, &hcsr04_left, &jy901s, &distance_pid_controller, 0.3, LAKE_TARGET_ANGLE);

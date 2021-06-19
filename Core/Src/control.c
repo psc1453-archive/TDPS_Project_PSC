@@ -47,13 +47,13 @@ void Keep_Distance_Forward(Motor_Pair* motor_pair, HCSR04* hcsr04, JY901S* jy901
     float current_distance = hcsr04->distance;
     float distance_error = pid_controller->target - current_distance;
     float angle_diff = preset_angle - AngleGetLatestMean(jy901s);
-    if(angle_diff > 20 || angle_diff < -20)
-    {
-        TurnTo(jy901s, motor_pair, preset_angle, 0.25, 0, 1);
-        pid_controller->error_sum = 0;
-        pid_controller->error_last = 0;
-    }
-    else
+//    if(angle_diff > 220 || angle_diff < -200)
+//    {
+//        TurnTo(jy901s, motor_pair, preset_angle, 0.25, 0, 1);
+//        pid_controller->error_sum = 0;
+//        pid_controller->error_last = 0;
+//    }
+//    else
     {
         Controlled_Move_Forward(motor_pair, pid_controller, -distance_error, offset_speed);
     }
@@ -61,6 +61,6 @@ void Keep_Distance_Forward(Motor_Pair* motor_pair, HCSR04* hcsr04, JY901S* jy901
 
 void Keep_Angle_Forward(Motor_Pair* motor_pair, JY901S* jy901s, PID_Controller* pid_controller, float offset_speed, float preset_angle)
 {
-    float angle_error = preset_angle - AngleGetLatestMean(jy901s);
+    float angle_error = RegulateAngle(preset_angle - AngleGetLatest(jy901s));
     Controlled_Move_Forward(motor_pair, pid_controller, angle_error, offset_speed);
 }
