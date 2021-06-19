@@ -181,13 +181,13 @@ void LCD_SoftPWMCtrlRun(void)
         HAL_GPIO_WritePin(GPIOE, GPIO_PIN_10, GPIO_PIN_RESET);
 }
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-    if (htim->Instance == TIM16)
-    {
-        LCD_SoftPWMCtrlRun();
-    }
-}
+//void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+//{
+//    if (htim->Instance == TIM16)
+//    {
+//        LCD_SoftPWMCtrlRun();
+//    }
+//}
 
 // ÆÁÄ»Öð½¥±äÁÁ»òÕß±ä°µ
 // Brightness_Dis: Ä¿±êÖµ

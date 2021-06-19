@@ -48,7 +48,7 @@ const uint8_t ov7725_default_regs[][2] = {
     {MTX5,          0x7b},
     {MTX6,          0x91},
     {MTX_CTRL,      0x1e},
-    {BRIGHTNESS,    0x11}, // default 0x08
+    {BRIGHTNESS,    0x08}, // default 0x08
     {CONTRAST,      0x20}, // default 0x20
     {UVADJ0,        0x81},
     {SDE,           SDE_CONT_BRIGHT_EN | SDE_SATURATION_EN},

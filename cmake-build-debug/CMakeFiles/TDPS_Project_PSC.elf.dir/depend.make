@@ -902,6 +902,9 @@ CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/CMSI
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/CMSIS/Include/cmsis_version.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/CMSIS/Include/core_cm7.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/CMSIS/Include/mpu_armv7.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/ST7735/Inc/lcd.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/ST7735/Inc/st7735.h
+CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/ST7735/Inc/st7735_reg.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
 CMakeFiles/TDPS_Project_PSC.elf.dir/Core/Src/stm32h7xx_it.c.obj: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h

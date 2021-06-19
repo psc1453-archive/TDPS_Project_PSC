@@ -26,6 +26,7 @@
 #include "HCSR04.h"
 #include <stdio.h>
 #include "JY901S.h"
+#include "lcd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -65,11 +66,14 @@ extern LPTIM_HandleTypeDef hlptim2;
 extern LPTIM_HandleTypeDef hlptim3;
 extern LPTIM_HandleTypeDef hlptim4;
 extern LPTIM_HandleTypeDef hlptim5;
+extern TIM_HandleTypeDef htim13;
 extern UART_HandleTypeDef huart5;
 /* USER CODE BEGIN EV */
 extern HCSR04 hcsr04_front;
 extern HCSR04 hcsr04_left;
 extern JY901S jy901s;
+
+extern int d_time;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -282,6 +286,20 @@ void EXTI15_10_IRQHandler(void)
 }
 
 /**
+  * @brief This function handles TIM8 update interrupt and TIM13 global interrupt.
+  */
+void TIM8_UP_TIM13_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM8_UP_TIM13_IRQn 0 */
+
+  /* USER CODE END TIM8_UP_TIM13_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim13);
+  /* USER CODE BEGIN TIM8_UP_TIM13_IRQn 1 */
+
+  /* USER CODE END TIM8_UP_TIM13_IRQn 1 */
+}
+
+/**
   * @brief This function handles UART5 global interrupt.
   */
 void UART5_IRQHandler(void)
@@ -425,6 +443,18 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     {
         Angle_UART_INT_Handler(&jy901s, huart);
     }
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+    if(htim->Instance == TIM13)
+    {
+        d_time++; // /0.2s
+    }
+    else if (htim->Instance == TIM16)
+    {
+        LCD_SoftPWMCtrlRun();
+    }
+
 }
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -142,9 +142,13 @@ void Patio1()
     Camera_Init_Device(&hi2c1, FRAMESIZE_TDPS_NN_54P, PIXFORMAT_YUV422);
     ST7735_LCD_Driver.FillRect(&st7735_pObj, 0, 58, ST7735Ctx.Width, 16, BLACK);
     // Path finding
-//    while(!(hcsr04_front.distance < 30.0 && hcsr04_front.distance > 0.5))
-while(1)
-{
+    while(!(hcsr04_front.distance < 30.0 && hcsr04_front.distance > 0.5))
+//while(0)
+    {
+        if(HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin))
+        {
+            break;
+        }
         if(DMA_Started)
         {
 

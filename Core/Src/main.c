@@ -106,6 +106,8 @@ TCS34725 color_sensor;
 COLOR_RGBC_RAW raw_buffer;
 COLOR_CMYK cmyk_buffer;
 COLOR_HSL hsl_buffer;
+
+int d_time = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -174,6 +176,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM3_Init();
   MX_LPTIM5_Init();
+  MX_TIM13_Init();
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
     Motor_Init(&motor_pair, motor_pair_connector, &htim3, &htim3, TIM_CHANNEL_2, TIM_CHANNEL_3);
@@ -194,120 +197,121 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
     HAL_Delay(1000);
-//    Patio2();
 int color = 0;
 //    Motor_Straight(&motor_pair, 0.3);
+
+Patio1();
+return 0;
+
+//    while(1)
+//    {
+//            TCS34725_GetRawData(&color_sensor, &raw_buffer);
+//            TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
+//            TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
+//
+//            printf(cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? "yellow\r\n" : "red\r\n") : (cmyk_buffer.c < cmyk_buffer.y ? "yellow\r\n" : "blue\r\n"));
+//            printf("%d\r\n", hsl_buffer.s);
+//    }
+
+
+
+    while(!(color = isOnColor()))
+    {
+        Motor_Straight(&motor_pair, 0.3);
+    }
+    Motor_Stop(&motor_pair);
+    HAL_Delay(1000);
+    HAL_TIM_Base_Start_IT(&htim13);
+    if(color == 1)
+    {
+        TurnTo(&jy901s, &motor_pair, 45, 0.3, 100, 2);
+        while(d_time < 37)
+        {
+            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 45);
+        }
+        Motor_Stop(&motor_pair);
+        return 0;
+    }
+    else if(color == 3)
+    {
+        TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 2);
+        while(hcsr04_front.distance > 55)
+        {
+            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
+
+        }
+    }
+    else
+    {
+        TurnTo(&jy901s, &motor_pair, -45, 0.3, 100, 2);
+        while(d_time < 37)
+        {
+            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, -45);
+        }
+        Motor_Stop(&motor_pair);
+        return 0;
+    }
+
+    TurnTo(&jy901s, &motor_pair, -90, 0.3, 100, 2);
+    while(hcsr04_left.distance < 300)
+    {
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.9, -90);
+    }
+    HAL_Delay(3000);
+    for(int i = 0; i < 8; i++)
+    {
+        TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 2);
+        Motor_Straight(&motor_pair, 0.5);
+        HAL_Delay(1000);
+    }
+    TurnTo(&jy901s, &motor_pair, -90, 0.3, 100, 1);
+    while(hcsr04_front.distance > 40)
+    {
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, -90);
+    }
+    Motor_Stop(&motor_pair);
+    HAL_Delay(1000);
+    TurnTo(&jy901s, &motor_pair, 90, 0.4, 100, 1);
+    while(hcsr04_front.distance > 50)
+    {
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.4, 87);
+    }
+    Motor_Stop(&motor_pair);
+    printf("Hello World!\nPowerful Science Council\n2021/06/18 22:13:07\n\nShichen Peng 2429660P\nJinyu Yin 2429418Y\nYuxuan Wang 2429632W\nChenyue Wang 2429285W\nYuhui Zhang2429310Z\nYuhan Wu 2429633W\nYuxuan Liu 2429662L\nYueling Zhao 2429312Z\nYuxin Yang 2429637Y\nXincheng Zhu 2429649Z\n");
+    return 0;
+
+
+
+
+
     while (1)
   {
-//      while(1)
+
+//        while(1)
+//        {
+//            TCS34725_GetRawData(&color_sensor, &raw_buffer);
+//            TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
+//            TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
+
+//            printf(cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? "yellow\r\n" : "red\r\n") : (cmyk_buffer.c < cmyk_buffer.y ? "yellow\r\n" : "blue\r\n"));
+//            printf("%d\r\n", hsl_buffer.s);
+//        }
+
+//      HAL_TIM_Base_Start_IT(&htim13);
+//      while(d_time < 37)
 //      {
-//          printf("Hello World!\nPowerful Science Council\n2021/06/18 22:13:07\n\nShichen Peng 2429660P\nJinyu Yin 2429418Y\nYuxuan Wang 2429632W\nChenyue Wang 2429285W\nYuhui Zhang2429310Z\nYuhan Wu 2429633W\nYuxuan Liu 2429662L\nYueling Zhao 2429312Z\nYuxin Yang 2429637Y\nXincheng Zhu 2429649Z\n");
-//          return 0;
+//          Motor_Straight(&motor_pair, 0.5);
 //      }
+//      Motor_Stop(&motor_pair);
+//      return 0;
 
-      while(!(color = isOnColor()))
-      {
-          Motor_Straight(&motor_pair, 0.3);
-      }
-      Motor_Stop(&motor_pair);
-      HAL_Delay(1000);
-
-        if(color == 1)
-        {
-            TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 2);
-            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
-        }
-        else if(color == 2)
-        {
-            while(hcsr04_front.distance > 55)
-            {
-                TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 2);
-
-                Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
-
-            }
-        }
-        else
-        {
-
-        }
-        TurnTo(&jy901s, &motor_pair, -90, 0.3, 100, 2);
-        while(hcsr04_left.distance < 300)
-        {
-            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.9, -90);
-        }
-        HAL_Delay(3000);
-        for(int i = 0; i < 8; i++)
-        {
-            TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 2);
-            Motor_Straight(&motor_pair, 0.5);
-            HAL_Delay(1000);
-        }
-        TurnTo(&jy901s, &motor_pair, -90, 0.3, 100, 1);
-        while(hcsr04_front.distance > 40)
-        {
-            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, -90);
-        }
-        Motor_Stop(&motor_pair);
-        HAL_Delay(1000);
-        TurnTo(&jy901s, &motor_pair, 90, 0.4, 100, 1);
-        while(hcsr04_front.distance > 50)
-        {
-            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.4, 87);
-        }
-        Motor_Stop(&motor_pair);
-        printf("Hello World!\nPowerful Science Council\n2021/06/18 22:13:07\n\nShichen Peng 2429660P\nJinyu Yin 2429418Y\nYuxuan Wang 2429632W\nChenyue Wang 2429285W\nYuhui Zhang2429310Z\nYuhan Wu 2429633W\nYuxuan Liu 2429662L\nYueling Zhao 2429312Z\nYuxin Yang 2429637Y\nXincheng Zhu 2429649Z\n");
-        return 0;
-
-
-        TCS34725_GetRawData(&color_sensor, &raw_buffer);
-      TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
-      TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
-
-
-
-
-
-
-
-//      printf(cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? "yellow\r\n" : "red\r\n") : (cmyk_buffer.c < cmyk_buffer.y ? "yellow\r\n" : "blue\r\n"));
-//      printf("%d\r\n", hsl_buffer.s);
-
-
-
-
-            //      Motor_Left_Backward(&motor_pair);
-//      Motor_Right_Forward(&motor_pair);
-//      Motor_PWM_Left_Duty_Cycle(&motor_pair, 1);
-//      Motor_PWM_Right_Duty_Cycle(&motor_pair, 0.3);
 //      TCS34725_GetRawData(&color_sensor, &raw_buffer);
 //      TCS34725_RAW_To_CMYK(&raw_buffer, &cmyk_buffer);
 //      TCS34725_RAW_To_HSL(&raw_buffer, &hsl_buffer);
 //      printf(cmyk_buffer.c < cmyk_buffer.m ? (cmyk_buffer.m < cmyk_buffer.y ? "yellow\r\n" : "red\r\n") : (cmyk_buffer.c < cmyk_buffer.y ? "yellow\r\n" : "blue\r\n"));
 //      printf("%d\r\n", hsl_buffer.s);
 
-//      Keep_Distance_Forward(&motor_pair, &hcsr04_left, &jy901s, &distance_pid_controller, 0.3, -30);
-//      printf("%f   %f    %f\r\n", hcsr04_front.distance, hcsr04_left.distance, AngleGetLatestMean(&jy901s));
-//      printf("Angle_mean: %f\r\n", AngleGetLatestMean(&jy901s));
-//      printf("%f\r\n", RegulateAngle(126.25- AngleGetLatestMean(&jy901s)));
-//if(!start_strait)
-//{
-//    start_distance = hcsr04_left.distance;
-//    start_angle = AngleGetLatest(&jy901s);
-//    start_strait = 1;
-//    PID_Init(&distance_pid_controller, start_distance, DISTANCE_P_DATA, DISTANCE_I_DATA, DISTANCE_D_DATA);
-//}
-//      TurnTo(&jy901s, &motor_pair, 126.25, 0.25, 2000);
-////      HAL_Delay(3000);
-//      while (1)
-//      {
-//          Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.3, 126.25);
-//
-//      }
-//      Motor_Stop(&motor_pair);
-//      return 0;
 
-//      Keep_Distance_Forward(&motor_pair, &hcsr04_left, &jy901s, &distance_pid_controller, 0.3, start_angle);
     /* USER CODE END WHILE */
 
 //  MX_X_CUBE_AI_Process();
