@@ -102,7 +102,7 @@ int isOnColor()
     }
     color_last = color;
     printf("%d %d %d\r\n", color_last, color, compare_cnt);
-    if(compare_cnt > 30)
+    if(compare_cnt > 20)
     {
         return color_last;
     }

@@ -177,6 +177,7 @@ int main(void)
   MX_TIM3_Init();
   MX_LPTIM5_Init();
   MX_TIM13_Init();
+  MX_TIM4_Init();
   MX_X_CUBE_AI_Init();
   /* USER CODE BEGIN 2 */
     Motor_Init(&motor_pair, motor_pair_connector, &htim3, &htim3, TIM_CHANNEL_2, TIM_CHANNEL_3);
@@ -192,7 +193,15 @@ int main(void)
     PID_Init(&distance_pid_controller, 50, DISTANCE_P_DATA, DISTANCE_I_DATA, DISTANCE_D_DATA);
 
     TCS34725_Init(&color_sensor, &hi2c2);
-  /* USER CODE END 2 */
+    DS1302_Time ds1302_time = {0};
+    DS1302 ds1302 = {
+            CLOCK_CLK_GPIO_Port, CLOCK_CLK_Pin,
+            CLOCK_DAT_GPIO_Port, CLOCK_DAT_Pin,
+            CLOCK_RST_GPIO_Port, CLOCK_RST_Pin
+    };
+    char time_str[] = "2000/02/10 14:20:00";
+
+    /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -200,8 +209,15 @@ int main(void)
 int color = 0;
 //    Motor_Straight(&motor_pair, 0.3);
 
-Patio1();
-return 0;
+//Patio1();
+//return 0;
+
+
+    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
+
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, 600-1);
+
+
 
 //    while(1)
 //    {
@@ -221,21 +237,42 @@ return 0;
     }
     Motor_Stop(&motor_pair);
     HAL_Delay(1000);
-    HAL_TIM_Base_Start_IT(&htim13);
+
     if(color == 1)
     {
-        TurnTo(&jy901s, &motor_pair, 45, 0.3, 100, 2);
-        while(d_time < 37)
+        TurnTo(&jy901s, &motor_pair, 45, 0.4, 100, 2);
+        HAL_TIM_Base_Start_IT(&htim13);
+        while(d_time < 35)
         {
             Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 45);
         }
         Motor_Stop(&motor_pair);
-        return 0;
+        TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 0);
+        d_time = 0;
+        d_time = 0;
+        while(d_time < 35)
+        {
+            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
+        }
+        TurnTo(&jy901s, &motor_pair, -90, 0.3, 100, 0);
+        d_time = 0;
+        d_time = 0;
+        while(d_time < 25)
+        {
+            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, -90);
+        }
+        TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 0);
+        while(hcsr04_front.distance > 60)
+        {
+            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
+
+        }
     }
     else if(color == 3)
     {
-        TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 2);
-        while(hcsr04_front.distance > 55)
+        TurnTo(&jy901s, &motor_pair, 0, 0.4, 100, 0);
+        HAL_TIM_Base_Start_IT(&htim13);
+        while(hcsr04_front.distance > 60)
         {
             Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
 
@@ -243,26 +280,32 @@ return 0;
     }
     else
     {
-        TurnTo(&jy901s, &motor_pair, -45, 0.3, 100, 2);
-        while(d_time < 37)
+        TurnTo(&jy901s, &motor_pair, -45, 0.4, 100, 2);
+        HAL_TIM_Base_Start_IT(&htim13);
+        while(d_time < 35)
         {
             Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, -45);
         }
         Motor_Stop(&motor_pair);
-        return 0;
+        TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 0);
+        while(hcsr04_front.distance > 60) {
+            Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
+
+        }
     }
 
-    TurnTo(&jy901s, &motor_pair, -90, 0.3, 100, 2);
+    TurnTo(&jy901s, &motor_pair, -90, 0.35, 100, 0);
     while(hcsr04_left.distance < 300)
     {
         Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.9, -90);
     }
-    HAL_Delay(3000);
-    for(int i = 0; i < 8; i++)
+    HAL_Delay(2000);
+    TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 0);
+    d_time = 0;
+    d_time = 0;
+    while(d_time < 34)
     {
-        TurnTo(&jy901s, &motor_pair, 0, 0.3, 100, 2);
-        Motor_Straight(&motor_pair, 0.5);
-        HAL_Delay(1000);
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.5, 0);
     }
     TurnTo(&jy901s, &motor_pair, -90, 0.3, 100, 1);
     while(hcsr04_front.distance > 40)
@@ -272,12 +315,21 @@ return 0;
     Motor_Stop(&motor_pair);
     HAL_Delay(1000);
     TurnTo(&jy901s, &motor_pair, 90, 0.4, 100, 1);
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, 1000-1);
+    HAL_Delay(1000);
     while(hcsr04_front.distance > 50)
     {
-        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.4, 87);
+        Keep_Angle_Forward(&motor_pair, &jy901s, &angle_pid_controller, 0.4, 82);
     }
     Motor_Stop(&motor_pair);
-    printf("Hello World!\nPowerful Science Council\n2021/06/18 22:13:07\n\nShichen Peng 2429660P\nJinyu Yin 2429418Y\nYuxuan Wang 2429632W\nChenyue Wang 2429285W\nYuhui Zhang2429310Z\nYuhan Wu 2429633W\nYuxuan Liu 2429662L\nYueling Zhao 2429312Z\nYuxin Yang 2429637Y\nXincheng Zhu 2429649Z\n");
+    DS1302_timeRead(&ds1302, &ds1302_time);
+
+    sprintf(time_str, "%4d/%02d/%02d %02d:%02d:%02d", ds1302_time.year, ds1302_time.month, ds1302_time.date, ds1302_time.hour, ds1302_time.minute, ds1302_time.second);
+    printf("\n");
+    printf(time_str);
+    printf("\n");
+    printf("Hello World!\nPowerful Science Council\n\nShichen Peng 2429660P\nJinyu Yin 2429418Y\nYuxuan Wang 2429632W\nChenyue Wang 2429285W\nYuhui Zhang2429310Z\nYuhan Wu 2429633W\nYuxuan Liu 2429662L\nYueling Zhao 2429312Z\nYuxin Yang 2429637Y\nXincheng Zhu 2429649Z\n");
+
     return 0;
 
 
